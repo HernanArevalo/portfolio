@@ -1,0 +1,77 @@
+.me-container{
+    height: 100vh;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.me1-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50vh;
+    align-items: center;
+}
+
+.me1-grid1-container > h1{
+    font-size: 260px;
+    color: rgb(246, 218, 85);
+    margin: 0;
+    line-height: 180px;
+}
+
+
+.me1-grid1-container > h2{
+    font-size: 70px;
+    color: rgb(238, 117, 74);
+    margin: 0;
+    line-height: 70px;
+}
+
+.me1-grid1-container > h3{
+    font-size: 25px;
+    color: rgb(246, 218, 85);
+    margin: 0;
+}
+
+.me1-grid2-container{
+    width: 40%;
+    text-align: right;
+}
+
+.studies{
+    font-size: 25px;
+    color: rgb(246, 218, 85);
+
+}
+
+.ubication{
+    color: rgb(238, 117, 74);
+    font-size: 20px;
+}
+
+.me2-container{
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.me2-grid1-container{
+    width: 40%;
+    margin: auto;
+}
+.me2-grid2-container{
+    width: 40%;
+    color: rgb(246, 218, 85);
+    text-align: right;
+    font-size: 20px;
+}
+.me2-grid1-container > img{
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    border: 6px solid rgb(238, 117, 74);
+}
