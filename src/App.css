@@ -26,7 +26,13 @@ body{
   padding-left: 88px;
 }
 .content > div{
-  padding-top: 20px;
   padding: 0px 40px;
+  text-align: left;
+}
 
+.section-title{
+  font-size: 220px;
+  color: rgb(246, 218, 85);
+  margin: 0;
+  height: 260px;
 }

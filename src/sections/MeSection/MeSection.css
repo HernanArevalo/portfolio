@@ -10,14 +10,6 @@
     flex-direction: row;
     justify-content: space-between;
     height: 50vh;
-    align-items: center;
-}
-
-.me1-grid1-container > h1{
-    font-size: 260px;
-    color: rgb(246, 218, 85);
-    margin: 0;
-    line-height: 180px;
 }
 
 
@@ -26,12 +18,17 @@
     color: rgb(238, 117, 74);
     margin: 0;
     line-height: 70px;
+    position: relative;
+    top: -40px;
 }
 
 .me1-grid1-container > h3{
     font-size: 25px;
     color: rgb(246, 218, 85);
     margin: 0;
+    position: relative;
+    top: -40px;
+
 }
 
 .me1-grid2-container{
@@ -42,6 +39,7 @@
 .studies{
     font-size: 25px;
     color: rgb(246, 218, 85);
+    margin-top: 40px;
 
 }
 

@@ -1,0 +1,39 @@
+.projects-container{
+    height: 100vh;
+    width: 100%;
+    text-align: left;
+}
+
+.project1-container > span{
+    font-size: 220px;
+    line-height: 180px;
+    color: rgb(246, 218, 85);
+    margin: 0;
+}
+
+.projects-grid{
+    width: 100%;
+    background-color: grey;
+    display: grid;
+    grid-template-rows: 200px 200px;
+}
+.project-item.large{
+    grid-column: 1;
+
+}
+.project-item.small{
+    grid-column: 2;
+}
+.project-item{
+    width: 100px;
+    height: 150px;
+    box-sizing: border-box;
+}
+
+
+.project-image{
+    width: 100%;
+}
+.project-image img{
+    width: 100%;
+}

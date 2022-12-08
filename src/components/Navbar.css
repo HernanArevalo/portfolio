@@ -7,8 +7,6 @@
     left: -112px;
     top: 0;
     margin: 0;
-    /**/
-    opacity: 0.4;
 }
   
   .navbar nav{
@@ -52,6 +50,8 @@
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    text-decoration: none;
+
 
 }
 
