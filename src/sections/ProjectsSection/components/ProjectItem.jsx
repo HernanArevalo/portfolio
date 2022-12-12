@@ -1,4 +1,3 @@
-import '../projectsSection.css'
 
 
 export const ProjectItem = ( {project} ) => {

@@ -1,6 +1,5 @@
 import React from 'react'
 import { ProjectItem } from './components/ProjectItem';
-import './projectsSection.css'
 
 export const ProjectsSection = () => {
 
@@ -46,7 +45,7 @@ export const ProjectsSection = () => {
 
     },
     {
-      name: "Twitter clone - mock-up",
+      name: "Twitter clone",
       pc: true,
       mobile: false,
       url: "hernanarevalo.github.io/1",
