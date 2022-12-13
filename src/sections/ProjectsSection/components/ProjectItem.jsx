@@ -6,8 +6,7 @@ export const ProjectItem = ( {project} ) => {
     <>
         <div className={`project-item ${project.size == "s"? "small":"large"}`}>
             <div className="project-image">
-                <img src={`src/sections/ProjectsSection/assets/${project.image_name}`} 
-                     className="project-image"/>
+                <img src={`src/sections/ProjectsSection/assets/${project.image_name}`}/>
             </div>
             <div className="project-info">
 
