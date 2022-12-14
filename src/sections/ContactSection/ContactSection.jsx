@@ -26,11 +26,12 @@ export const ContactSection = () => {
           <div className="contact-right">
             <form action="">
               <label>Name</label>
-              <input type="text" className='name-input'/>
+              <textarea type="text" className='name-input'/>
               <label>Email</label>
-              <input type="text" className='email-input'/>
+              <textarea type="text" className='email-input'/>
               <label>Message</label>
-              <input type="text" className='message-input'/>
+              <textarea type="text" className='message-input'/>
+              <button className="submit-button"type="submit">Send</button>
             </form>
           </div>
         </div>

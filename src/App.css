@@ -5,6 +5,9 @@
   width: calc(100vw - 18px);
 
 }
+:root{
+  scroll-behavior: smooth;
+}
 
 * {
   box-sizing: border-box;

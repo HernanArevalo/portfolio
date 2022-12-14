@@ -10,22 +10,18 @@ export const SkillsSection = () => {
       name:'React.js',
       image_file: 'reactjs.png'
     },
-    { 
-      name:'Javascript',
-      image_file: 'javascript.png'
-    }, 
-    {
-      name:'Bootstrap',
-      image_file: 'bootstrap.png'
-    },
-    {
-      name:'Illustrator',
-      image_file: 'illustrator.png'
-    },
     {
       name:'React Redux',
       image_file: 'redux.png'
     },
+    {
+      name:'React Router',
+      image_file: 'router.png'
+    },
+    { 
+      name:'Javascript',
+      image_file: 'javascript.png'
+    }, 
     {
       name:'python',
       image_file: 'python.png'
@@ -35,20 +31,24 @@ export const SkillsSection = () => {
       image_file: 'firebase.png'
     },
     {
-      name:'Photoshop',
-      image_file: 'photoshop.png'
+      name:'Bootstrap',
+      image_file: 'bootstrap.png'
     },
-    {
-      name:'React Router',
-      image_file: 'router.png'
-    },
-    { name:'Html Css',
-    image_file: 'htmlcss.png'
-  },
     {
       name:'Material UI',
       image_file: 'mui.png'
     },
+    { name:'Html Css',
+    image_file: 'htmlcss.png'
+  },
+  {
+    name:'Illustrator',
+    image_file: 'illustrator.png'
+  },
+  {
+    name:'Photoshop',
+    image_file: 'photoshop.png'
+  },
     {
       name:'Premiere',
       image_file: 'premiere.png'

@@ -8,6 +8,7 @@
     flex-direction: row;
     height: calc(100vh - 260px);
     font-size: 25px;
+    padding-bottom: 70px;
 
 }
 
@@ -42,24 +43,43 @@ label{
 
 }
 
-input{
+textarea{
     width: 70%;
     background-color: rgb(246, 218, 85);
     border: none;
     border-radius: 15px;
     font-size: 25px;
     line-height: 25px;
-    color: black;
-    padding: 0 10px;
-    font-weight: 400;
-
+    color: rgb(42, 93, 131);
+    padding: 10px 10px;
+    font-weight: 600;
+    resize: none;
 }
-input:focus{
+textarea:focus{
     outline: none;
 }
 .name-input, .email-input{
-    height: 50px;
+    height: 45px;
 }
 .message-input{
     height: 120px;
+}
+
+.submit-button{
+    font-family: 'Source Serif Pro', serif;
+    color: rgb(42, 93, 131);
+    background-color: rgb(238, 117, 74);
+    font-size: 25px;
+    height: 45px;
+    width: 35%;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .4s;
+    margin-top: 5px;
+}
+
+.submit-button:hover{
+    scale: 0.9
 }
