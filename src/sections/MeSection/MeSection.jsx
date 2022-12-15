@@ -13,12 +13,12 @@ export const MeSection = () => {
             </div>
 
             <div className="me1-grid2-container">
-              <p className="studies">
-                Bachiller Humanista.
-                Estudiante de Ingeniería en
-                Sistemas de Información.
-                Desarrollador de proyectos web.
-              </p>
+              <div className="studies">
+                  <span>Bachiller Humanista.</span>
+                  <span>Information systems engineering student.</span>
+                  <span>Intermediate English level (FL - UNC).</span>
+                  <span>Website project developer.</span>
+              </div>
               <p className="ubication">
                 Córdoba, Argentina
               </p>
@@ -27,10 +27,14 @@ export const MeSection = () => {
           </div>
           <div className="me2-container">
             <div className="me2-grid1-container">
-              <img src={ profile } alt=""/>
+                  <span>Frontend knowledge of HTML, CSS, Javascript, React and Redux.</span>
+                  <span>Strong understanding of design principles, Modular CSS, and responsive design.</span>
+                  <span>Passionate learner of new technologies and tools with fast learning capability.</span>
+                  <span>Intermediate English level (Facultad de Lenguas - UNC)</span>
+              
             </div>
             <div className="me2-grid2-container">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, dolorum. Omnis, delectus culpa! Sunt, nisi nemo minima fuga illo saepe, cum possimus at praesentium alias, totam doloribus rem repudiandae neque.</p>
+              <img src={ profile } alt=""/>
             </div>
           </div>
         </div>  )

@@ -27,6 +27,9 @@ body{
 
 .content{
   padding-left: 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .content > div{
   padding: 0px 40px;

@@ -9,38 +9,44 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 50vh;
+    height: 40vh;
 }
 
 
 .me1-grid1-container > h2{
-    font-size: 70px;
+    font-size: 90px;
     color: rgb(238, 117, 74);
     margin: 0;
     line-height: 70px;
     position: relative;
-    top: -40px;
+    top: -30px;
+    
 }
 
 .me1-grid1-container > h3{
-    font-size: 25px;
+    font-size: 40px;
     color: rgb(246, 218, 85);
     margin: 0;
     position: relative;
-    top: -40px;
+    top: -30px;
 
 }
 
 .me1-grid2-container{
     width: 40%;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .studies{
     font-size: 25px;
+    gap: 5px;
     color: rgb(246, 218, 85);
     margin-top: 40px;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .ubication{
@@ -49,7 +55,8 @@
 }
 
 .me2-container{
-    height: 50vh;
+    height: 60vh;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -58,18 +65,28 @@
 }
 
 .me2-grid1-container{
-    width: 40%;
-    margin: auto;
+    width: 70%;
+    color: rgb(246, 218, 85);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.me2-grid1-container span{
+    font-weight: 600;
+    font-size: 24px;
+    
 }
 .me2-grid2-container{
-    width: 40%;
-    color: rgb(246, 218, 85);
-    text-align: right;
-    font-size: 20px;
+    width: 30%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
 }
-.me2-grid1-container > img{
-    height: 230px;
-    width: 230px;
+.me2-grid2-container > img{
+    height: 280px;
+    width: 280px;
     border-radius: 50%;
     border: 6px solid rgb(238, 117, 74);
 }
+
