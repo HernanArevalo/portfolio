@@ -49,13 +49,17 @@ export const ContactSection = () => {
             </div>
           </div>
           <div className="contact-right">
-            <form action="">
+            <form 
+                  target="_blank" 
+                  action="https://formsubmit.co/hernanarevalo16@gmail.com" 
+                  method="POST"
+            >
               <label>Name</label>
-              <textarea type="text" className='name-input'/>
+              <input type="text" className='name-input' name='name'/>
               <label>Email</label>
-              <textarea type="text" className='email-input'/>
+              <input type="text" className='email-input' name='email'/>
               <label>Message</label>
-              <textarea type="text" className='message-input'/>
+              <textarea type="text" className='message-input' name='message'/>
               <button className="submit-button"type="submit">Send</button>
             </form>
           </div>

@@ -43,7 +43,7 @@ label{
 
 }
 
-textarea{
+textarea, input{
     width: 70%;
     background-color: rgb(246, 218, 85);
     border: none;
@@ -54,7 +54,19 @@ textarea{
     padding: 10px 10px;
     font-weight: 600;
     resize: none;
+    outline: none;
 }
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 50px rgb(246, 218, 85) inset;
+    -webkit-text-fill-color: rgb(42, 93, 131);
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 50px rgb(246, 218, 85) inset;
+    -webkit-text-fill-color: rgb(42, 93, 131);
+} 
+
 textarea:focus{
     outline: none;
 }
