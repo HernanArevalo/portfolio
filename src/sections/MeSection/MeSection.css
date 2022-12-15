@@ -1,8 +1,12 @@
 .me-container{
     height: 100vh;
-    width: 100%;
+    width: 85%;
     text-align: left;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .me1-container{
@@ -10,6 +14,7 @@
     flex-direction: row;
     justify-content: space-between;
     height: 40vh;
+    width: 100%;
 }
 
 
@@ -52,11 +57,12 @@
 .ubication{
     color: rgb(238, 117, 74);
     font-size: 20px;
+    margin-top: 5px;
 }
 
 .me2-container{
     height: 60vh;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -77,6 +83,14 @@
     font-size: 24px;
     
 }
+
+.span-1{
+    color: rgb(246, 218, 85);
+}
+.span-2{
+    color: rgb(238, 117, 74);
+}
+
 .me2-grid2-container{
     width: 30%;
     display: flex;

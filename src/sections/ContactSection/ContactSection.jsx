@@ -1,7 +1,23 @@
 import React from 'react'
+import { useState } from 'react'
 import './ContactSection.css'
 
 export const ContactSection = () => {
+
+  const [copied, setCopied] = useState(false)
+
+  const onClickEmail = () => {
+
+
+    navigator.clipboard.writeText('hernanarevalo16@gmail.com')
+    setCopied(true)
+
+    setTimeout(() => {
+      setCopied(false)
+    }, 3000);
+
+  }
+
   return (
     <div className="contact-container" id="contact">
 
@@ -11,17 +27,26 @@ export const ContactSection = () => {
           <div className="contact-left">
             <box-icon color="rgb(238, 117, 74)" 
                       name='at'
-                      size="lg">
+                      size="lg"
+                      onClick={ onClickEmail }>
                   
             </box-icon>
-            <div className='email'>hernanarevalo16@gmail.com</div>
+            <div className="email-container">
+              <div className='email' onClick={ onClickEmail }>hernanarevalo16@gmail.com</div>
+              {copied? <div className='copied'>email copied!</div>: null}
+            </div>
+
             <box-icon color="rgb(238, 117, 74)" 
                       name='linkedin-square'
                       type='logo'
                       size="lg">
                   
             </box-icon>
-            <div className="linkedin-link">linkedin.com/in/arevalo-hernan</div>
+            <div className="linkedin-link">
+              <a href="http://linkedin.com/in/arevalo-hernan" target="_blank" rel="noopener noreferrer">
+                linkedin.com/in/arevalo-hernan
+              </a>
+            </div>
           </div>
           <div className="contact-right">
             <form action="">

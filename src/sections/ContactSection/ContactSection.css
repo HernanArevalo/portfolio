@@ -65,6 +65,30 @@ textarea:focus{
     height: 120px;
 }
 
+.email, .linkedin-link{
+    cursor: pointer;
+
+}
+
+.linkedin-link a{
+    text-decoration: none;
+    color: rgb(246, 218, 85);
+}
+
+.linkedin-link:hover{
+    text-decoration: underline;
+}
+
+
+.email-container{
+    height: 60px;
+}
+
+.copied{
+    color: rgb(238, 117, 74);
+    font-size: 20px;
+}
+
 .submit-button{
     font-family: 'Source Serif Pro', serif;
     color: rgb(42, 93, 131);

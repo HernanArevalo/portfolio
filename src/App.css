@@ -30,6 +30,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .content > div{
   padding: 0px 40px;
