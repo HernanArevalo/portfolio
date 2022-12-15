@@ -88,8 +88,9 @@ export const ProjectsSection = () => {
 
   return (
     <div className="projects-container" id="projects">
-        <div className="project1-container">
-            <div className="section-title">Projects</div>
+
+        <div className="section-title">
+          Projects
         </div>
 
         <div className="project2-container">

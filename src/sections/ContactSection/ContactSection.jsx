@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { useForm } from '../../hooks/useForm/useForm'
 import './ContactSection.css'
 
 export const ContactSection = () => {
@@ -17,6 +18,13 @@ export const ContactSection = () => {
     }, 3000);
 
   }
+
+  const { formState, onInputChange, onResetForm, name, email, message } = useForm({
+    name: '',
+    email: '',
+    message: ''
+  })
+
 
   return (
     <div className="contact-container" id="contact">
@@ -55,12 +63,30 @@ export const ContactSection = () => {
                   method="POST"
             >
               <label>Name</label>
-              <input type="text" className='name-input' name='name'/>
+              <input 
+                      type="text" 
+                      className='name-input' 
+                      name='name'
+                      value = { name }
+                      onChange = { onInputChange }
+              />
               <label>Email</label>
-              <input type="text" className='email-input' name='email'/>
+              <input 
+                      type="text" 
+                      className='email-input' 
+                      name='email'
+                      value = { email }
+                      onChange = { onInputChange }
+              />
               <label>Message</label>
-              <textarea type="text" className='message-input' name='message'/>
-              <button className="submit-button"type="submit">Send</button>
+              <textarea 
+                      type="text" 
+                      className='message-input' 
+                      name='message'
+                      value = { message }
+                      onChange = { onInputChange }
+              />
+              <button className="submit-button"type="submit" onClick={ onResetForm }>Send</button>
             </form>
           </div>
         </div>
