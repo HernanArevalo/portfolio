@@ -1,6 +1,6 @@
 import React from 'react'
 import './MeSection.css'
-import profile from '../../assets/profile.jpg'
+import profile from '/assets/MeSection/profile.jpg'
 
 export const MeSection = () => {
   return (

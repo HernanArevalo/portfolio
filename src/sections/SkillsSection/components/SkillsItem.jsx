@@ -7,7 +7,7 @@ export const SkillsItem = ({skill}) => {
             {skill.name.toUpperCase()}
         </div>
         <div className="skill-image">
-            <img src={`src/sections/SkillsSection/assets/${skill.image_file}`} 
+            <img src={`/assets/SkillsSection/${skill.image_file}`} 
                     className="skill-image"/>
         </div>
     </div>
