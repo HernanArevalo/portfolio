@@ -75,7 +75,7 @@
 }
 
 .me2-grid1-container{
-    width: 70%;
+    width: calc(100% - 280px);
     color: rgb(246, 218, 85);
     text-align: left;
     display: flex;
@@ -96,7 +96,7 @@
 }
 
 .me2-grid2-container{
-    width: 30%;
+    width: 280px;
     display: flex;
     align-items: end;
     justify-content: end;
@@ -115,4 +115,25 @@
     .me2-container{
         bottom: 10px;
     }
+}
+
+@media (max-width: 1400px) {
+    .me1-grid1-container > h2{
+        font-size: 70px;
+        top: -40px;
+    }
+
+    .section-title{
+        font-size: 170px;
+        height: auto;
+
+    }
+    .me1-grid2-container, .me1-grid1-container {
+        width: 50%;
+    }
+    .me1-grid1-container > h3{
+        top: -50px;
+    }
+
+
 }
