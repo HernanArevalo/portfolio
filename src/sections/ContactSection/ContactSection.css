@@ -1,6 +1,7 @@
 .contact-container{
     height: 100vh;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .contact{
@@ -118,4 +119,12 @@ textarea:focus{
 
 .submit-button:hover{
     scale: 0.9
+}
+
+@media (max-width: 1400px) {
+    .contact{
+        height: calc(100% - 215px);
+
+    }
+
 }

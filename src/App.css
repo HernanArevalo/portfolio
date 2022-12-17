@@ -50,3 +50,12 @@ body{
   right: 50%;
   color: white;
 }
+
+@media (max-width: 1400px) {
+
+  .section-title{
+      font-size: 170px;
+      height: 215px;
+
+  }
+}
