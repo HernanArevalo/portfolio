@@ -43,3 +43,10 @@ body{
   margin: 0;
   height: 260px;
 }
+
+.medidas-fix{
+  position: fixed;
+  top: 0;
+  right: 50%;
+  color: white;
+}

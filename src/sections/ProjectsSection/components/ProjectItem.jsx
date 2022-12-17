@@ -47,6 +47,7 @@ export const ProjectItem = ( {project} ) => {
 
                 </div>
             </div>
+
         </div>
     </>
   )

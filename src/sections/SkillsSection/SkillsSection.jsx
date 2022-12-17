@@ -15,5 +15,6 @@ export const SkillsSection = () => {
             { skills.map(skill => (<SkillsItem skill={skill} key={ skill.name }/>))}
           </div>
         </div>
+
     </div>  )
 }

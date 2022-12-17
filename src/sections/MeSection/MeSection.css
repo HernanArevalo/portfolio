@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 40vh;
+    height: 50vh;
     width: 100%;
 }
 
@@ -42,7 +42,9 @@
     text-align: right;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    position: relative;
+    top: 20px;
 }
 
 .studies{
@@ -61,12 +63,14 @@
 }
 
 .me2-container{
-    height: 60vh;
+    height: 50vh;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    bottom: 70px;
 
 }
 
@@ -104,3 +108,11 @@
     border: 6px solid rgb(238, 117, 74);
 }
 
+@media (max-width: 1480px) {
+    .me-container{
+        width: 100%;
+    }
+    .me2-container{
+        bottom: 10px;
+    }
+}
