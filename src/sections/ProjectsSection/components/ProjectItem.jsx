@@ -1,4 +1,4 @@
-
+import './ProjectItem.css'
 
 export const ProjectItem = ( {project} ) => {
 
@@ -19,13 +19,13 @@ export const ProjectItem = ( {project} ) => {
                   <div className="project-devices">
                     {project.mobile == true? 
                         <box-icon name='mobile' 
-                                  color="rgb(238, 117, 74)"
+                                  color="rgb(246, 218, 85)"
                                   size={ project.size == "s"? "sm":"md"}
 
                         ></box-icon> : null}
                     {project.pc == true? 
                         <box-icon name='laptop' 
-                                  color="rgb(238, 117, 74)"
+                                  color="rgb(246, 218, 85)"
                                   size={ project.size == "s"? "sm":"md"}
                         ></box-icon>
                         : null}

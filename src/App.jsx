@@ -6,8 +6,8 @@ import { MeSection, ProjectsSection, SkillsSection, ContactSection } from './sec
 
 function App() {
 
-  const [height, setHeight] = useState( window.innerHeight, window.innerWidth )
-  const [width, setWidth] = useState( window.innerHeight, window.innerWidth )
+  const [height, setHeight] = useState( window.innerHeight )
+  const [width, setWidth] = useState( window.innerWidth )
 
 
 

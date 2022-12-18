@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ProjectItem } from './components/ProjectItem';
+import { ProjectItemReduced } from './components/ProjectItemReduced';
 import { projects } from './projects-data.json'
 
 export const ProjectsSection = () => {
+
+  const [height, setHeight] = useState( window.innerHeight )
+
+
+  window.addEventListener('resize', function() {
+    
+    setHeight( window.innerHeight )
+
+  });
+
 
   return (
     <div className="projects-container" id="projects">
@@ -22,22 +33,44 @@ export const ProjectsSection = () => {
           </a>
         </div>
 
-        <div className="project2-container">
 
-          <div className="grid-projects large">
-            { projects.filter(project => project.size == "l").map(project => (
-              <ProjectItem  key={ project.name } project={ project }/>
-            ))}
-          </div>
+          {height >= 810? 
+            <div className="project2-container">
+              <div className="grid-projects large">
+                { projects.filter(project => project.size == "l").map(project => (
+                  <ProjectItem  key={ project.name } project={ project }/>
+                ))}
+              </div>
 
-          <div className="grid-projects small">
-            { projects.filter(project => project.size == "s").map(project => (
-              <ProjectItem  key={ project.name } project={ project }/>
-            ))}
+              <div className="grid-projects small">
+                { projects.filter(project => project.size == "s").map(project => (
+                  <ProjectItem  key={ project.name } project={ project }/>
+                ))}
 
-          </div>
+              </div>
+            </div>
+          
+          
+            :
+            <div className="project2-container">
+              <div className="grid-projects large">
+                { projects.filter(project => project.size == "l").map(project => (
+                  <ProjectItemReduced  key={ project.name } project={ project }/>
+                ))}
+              </div>
 
-        </div>
+              <div className="grid-projects small">
+                { projects.filter(project => project.size == "s").map(project => (
+                  <ProjectItemReduced  key={ project.name } project={ project }/>
+                ))}
+
+              </div>
+            </div>
+          
+          
+          }
+
+
     </div>
   )
 }
