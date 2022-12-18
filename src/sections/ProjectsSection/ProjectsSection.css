@@ -37,5 +37,11 @@
 @media (max-height: 810px) {
     .project2-container{
         height: calc(100% - 215px);
+        justify-content: center;
+        gap: 10%;
+
+    }
+    .grid-projects.large{
+        height: 42%;
     }
 }
