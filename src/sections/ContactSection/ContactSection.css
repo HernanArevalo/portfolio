@@ -126,5 +126,11 @@ textarea:focus{
         height: calc(100% - 215px);
 
     }
+    input,textarea{
+        font-size: 18px;
+    }
+    .contact-right form{
+        gap: 5px;
+    }
 
 }
