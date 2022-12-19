@@ -118,6 +118,14 @@
 }
 
 @media (max-width: 1400px) {
+    .me1-container{
+        height: 40vh;
+
+    }
+    .me2-container{
+        height: 60vh;
+    }
+
     .me1-grid1-container > h2{
         font-size: 70px;
         top: -40px;
@@ -130,5 +138,15 @@
         top: -50px;
     }
 
+
+}
+
+@media (max-width: 1200px) {
+    .studies{
+        font-size: 22px;
+    }
+    .me1-grid1-container{
+        width: 60%;
+    }
 
 }
