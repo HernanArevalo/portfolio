@@ -3,6 +3,22 @@ import './ProjectItemReduced.css'
 
 export const ProjectItemReduced = ( {project} ) => {
 
+    const deviceIconSize = () => {
+        if ( project.size == "s"){
+            if ( window.innerHeight <= 1400) {
+                return "xs"
+            }
+            return "sm"
+        }
+        else{
+            if ( window.innerHeight <= 1400) {
+                return "sm"
+            }
+            return "md"
+        }
+    }
+
+
     return (
       <>
           <div className={`project-item ${project.size == "s"? "small":"large"}`}>
@@ -31,13 +47,13 @@ export const ProjectItemReduced = ( {project} ) => {
                             {project.mobile == true? 
                                 <box-icon name='mobile' 
                                         color="rgb(246, 218, 85)"
-                                        size={ project.size == "s"? "sm":"md"}
+                                        size={ deviceIconSize }
 
                                 ></box-icon> : null}
                             {project.pc == true? 
                                 <box-icon name='laptop' 
                                         color="rgb(246, 218, 85)"
-                                        size={ project.size == "s"? "sm":"md"}
+                                        size={ deviceIconSize }
                                 ></box-icon>
                                 : null}
                         </div>
