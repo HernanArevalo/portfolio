@@ -4,8 +4,11 @@ import './ProjectItemReduced.css'
 export const ProjectItemReduced = ( {project} ) => {
 
     const deviceIconSize = () => {
+        console.log( window.innerHeight );
+
         if ( project.size == "s"){
             if ( window.innerHeight <= 1400) {
+                console.log( window.innerHeight );
                 return "xs"
             }
             return "sm"
@@ -16,6 +19,9 @@ export const ProjectItemReduced = ( {project} ) => {
             }
             return "md"
         }
+    }
+    const GithubIconSize = () => {
+        return "60px"
     }
 
 
@@ -44,16 +50,16 @@ export const ProjectItemReduced = ( {project} ) => {
                         </div>
 
                         <div className="project-devices">
-                            {project.mobile == true? 
+                            { project.mobile ? 
                                 <box-icon name='mobile' 
                                         color="rgb(246, 218, 85)"
                                         size={ deviceIconSize }
 
                                 ></box-icon> : null}
-                            {project.pc == true? 
+                            { project.pc ? 
                                 <box-icon name='laptop' 
                                         color="rgb(246, 218, 85)"
-                                        size={ deviceIconSize }
+                                        size={ ()=>{ return "70px"} }
                                 ></box-icon>
                                 : null}
                         </div>
@@ -67,7 +73,7 @@ export const ProjectItemReduced = ( {project} ) => {
                             <box-icon type='logo' 
                                     name='github' 
                                     color="rgb(238, 117, 74)" 
-                                    size={ project.size == "s"? "40px":"55px"} 
+                                    size={ GithubIconSize } 
                                     className="github-logo"
                             ></box-icon>
                         </a>
