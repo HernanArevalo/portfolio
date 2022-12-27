@@ -12,6 +12,7 @@ export const ProjectsSection = () => {
     
     setHeight( window.innerHeight )
     setWidth( window.innerWidth )
+
   });
 
 
@@ -39,8 +40,8 @@ export const ProjectsSection = () => {
         </div>
 
 
-          {height >= 810 || width <= 500 ? 
-            <div className="project2-container">
+          { (height >= 810 || width <= 500 ) ? 
+            <div className="project2-container 1">
               <div className="grid-projects large">
                 { projects.filter(project => project.size == "l").map(project => (
                   <ProjectItem  key={ project.name } project={ project }/>
@@ -57,7 +58,7 @@ export const ProjectsSection = () => {
           
           
             :
-            <div className="project2-container">
+            <div className="project2-container 2">
               <div className="grid-projects large">
                 { projects.filter(project => project.size == "l").map(project => (
                   <ProjectItemReduced  key={ project.name } project={ project }/>
