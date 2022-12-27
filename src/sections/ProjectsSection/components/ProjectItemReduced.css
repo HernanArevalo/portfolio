@@ -1,5 +1,5 @@
 
-@media (max-height: 810px){
+@media (min-width: 501px) and (max-height: 810px){
 
 
     .grid-projects.large{
@@ -198,3 +198,4 @@
         
     }
 }
+

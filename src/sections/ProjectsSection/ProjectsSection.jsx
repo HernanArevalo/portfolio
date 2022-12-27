@@ -40,7 +40,7 @@ export const ProjectsSection = () => {
         </div>
 
 
-          { ( height >= 810 ) ? 
+          { ( height >= 810 || width <= 500 ) ? 
             <div className="project2-container">
               <div className="grid-projects large">
                 { projects.filter(project => project.size == "l").map(project => (
@@ -58,7 +58,7 @@ export const ProjectsSection = () => {
           
           
             :
-            <div className="project2-container 2">
+            <div className="project2-container">
               <div className="grid-projects large">
                 { projects.filter(project => project.size == "l").map(project => (
                   <ProjectItemReduced  key={ project.name } project={ project }/>
