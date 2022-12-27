@@ -152,6 +152,12 @@
         height: auto;
     }
 
+    .grid-projects.small{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto ;
+    }
+
     .project-image img{
         width: 70px;
 
@@ -162,7 +168,7 @@
     }
 
     .project-item.small{
-        width: 60%;
+        width: 95%;
     }
 
     .project-image{
