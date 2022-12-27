@@ -59,3 +59,24 @@ body{
 
   }
 }
+
+
+@media (max-width: 500px) {
+  .App {
+    width: 100%;
+  }
+  .content{
+    width: 100%;
+    padding-left: 0;
+  }
+  .content > div{
+    padding: 0px 10px;
+    padding-top: 80px;
+  }
+
+  .section-title{
+    font-size: 25vw;
+    height: auto;
+
+}
+}

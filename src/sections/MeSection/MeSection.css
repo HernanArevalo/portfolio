@@ -150,3 +150,35 @@
     }
 
 }
+
+@media (max-width: 500px) {
+    .me-container{
+        height: auto;
+        width: 100%;
+    }
+    .me1-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+    }
+    .me1-grid1-container {
+        width: 100%;
+    }
+    .me1-grid1-container > h2{
+        font-size: 12vw;
+        top: -4vh;
+    }
+    .me1-grid1-container > h3{
+        font-size: 7vw;
+    }
+    .me1-grid2-container{
+        width: 100%;
+    }
+    .studies{
+        margin-top: 0px;
+    }
+    .me2-container{
+        height: auto;
+    }
+}
