@@ -25,7 +25,6 @@ export const ProjectsSection = () => {
             </div>
           </div>
 
-        <div className="project1-gri2-container">
           <a href="https://github.com/HernanArevalo" target="_blank">
             <div className="github-repository">
               GitHub repository
@@ -37,8 +36,6 @@ export const ProjectsSection = () => {
                     ></box-icon>
             </div>
           </a>
-
-        </div>
         </div>
 
 

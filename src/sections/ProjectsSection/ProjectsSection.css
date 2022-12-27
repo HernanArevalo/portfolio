@@ -57,18 +57,41 @@ a{
 }
 
 @media (max-width: 500px) {
+    .projects-container{
+        height: auto;
+    }
     .project1-container{
         flex-direction: column;
+        height: auto;
     }
-
-    .project2-container{
+    .project1-container > div{
+        height: auto;
+    }
+        .project2-container{
         height: auto;
         margin-top: 40px;
+    }
+
+    .github-repository{
+        margin-top: 0px;
+        flex-direction: row-reverse;
+        
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 6vw;
     }
 
     .grid-projects.large,.grid-projects.small{
         height: auto;
         flex-direction: column;
         align-items: center;
+    }
+
+    .project-description{
+        font-size: 5vw;
+        width: calc(100% - 40px);
+    }
+    .grid-projects.small{
+        margin-top: 50px;
     }
 }
