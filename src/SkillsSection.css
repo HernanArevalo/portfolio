@@ -73,8 +73,9 @@
         margin-top: 20px;
     }
     .skills-grid{
-        grid-template-columns: auto auto;
+        grid-template-columns: 20vw 20vw 20vw;
         row-gap: 30px;
+        column-gap: 30px;
     }
 
     .skill-item{
@@ -85,7 +86,7 @@
     }
     .skill-name{
         text-align: center;
-        
+        font-size: 15px;
     }
 
 }
