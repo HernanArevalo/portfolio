@@ -6,12 +6,12 @@ import { projects } from './projects-data.json'
 export const ProjectsSection = () => {
 
   const [height, setHeight] = useState( window.innerHeight )
-
+  const [width, setWidth] = useState( window.innerWidth )
 
   window.addEventListener('resize', function() {
     
     setHeight( window.innerHeight )
-
+    setWidth( window.innerWidth )
   });
 
 
@@ -39,7 +39,7 @@ export const ProjectsSection = () => {
         </div>
 
 
-          {height >= 810? 
+          {height >= 810 & width > 500 ? 
             <div className="project2-container">
               <div className="grid-projects large">
                 { projects.filter(project => project.size == "l").map(project => (
