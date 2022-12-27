@@ -51,7 +51,7 @@ export const ContactSection = () => {
                   
             </box-icon>
             <div className="linkedin-link">
-              <a href="http://linkedin.com/in/arevalo-hernan" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com/in/arevalo-hernan" target="_blank" rel="noopener noreferrer">
                 linkedin.com/in/arevalo-hernan
               </a>
             </div>

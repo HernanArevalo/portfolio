@@ -13,13 +13,14 @@
 
 }
 
-.contact > div{
+.contact-left, .contact-right{
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 
 .contact-left{
     color: rgb(246, 218, 85);
@@ -131,6 +132,39 @@ textarea:focus{
     }
     .contact-right form{
         gap: 5px;
+    }
+
+}
+
+@media (max-width: 500px){
+    .contact-container{
+        height: auto;
+    }
+
+ 
+    .contact{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .contact-left{
+        width: 100%;
+    }
+
+    .email-container, .linkedin-link{
+        height: auto;
+        top: -10px;
+        position: relative;
+    }
+
+    .contact-right{
+        margin-top: 40px;
+        width: 80%;
+    }
+
+    input, textarea{
+        width: 100%;
     }
 
 }
