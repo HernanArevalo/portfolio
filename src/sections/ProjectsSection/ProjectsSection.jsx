@@ -17,9 +17,15 @@ export const ProjectsSection = () => {
 
   return (
     <div className="projects-container" id="projects">
+        <div className="project1-container">
 
-        <div className="section-title">
-          Projects
+          <div className="project1-gri1-container">
+            <div className="section-title">
+              Projects
+            </div>
+          </div>
+
+        <div className="project1-gri2-container">
           <a href="https://github.com/HernanArevalo" target="_blank">
             <div className="github-repository">
               GitHub repository
@@ -31,6 +37,8 @@ export const ProjectsSection = () => {
                     ></box-icon>
             </div>
           </a>
+
+        </div>
         </div>
 
 

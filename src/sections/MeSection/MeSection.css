@@ -181,5 +181,6 @@
     }
     .me2-container{
         height: auto;
+        bottom: 0px;
     }
 }

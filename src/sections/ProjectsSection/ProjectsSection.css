@@ -3,6 +3,14 @@
     width: 100%;
     text-align: left;
 }
+a{
+    text-decoration: none;
+}
+.project1-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .project1-container > span{
     font-size: 220px;
@@ -43,5 +51,24 @@
     }
     .grid-projects.large{
         height: 42%;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .project1-container{
+        flex-direction: column;
+    }
+
+    .project2-container{
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .grid-projects.large,.grid-projects.small{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
     }
 }
