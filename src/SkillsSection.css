@@ -63,3 +63,29 @@
         column-gap: 15px;
     }
 }
+
+@media (max-width: 500px){
+    .skills-container{
+        height: auto;
+    }
+    .skills{
+        height: auto;
+        margin-top: 20px;
+    }
+    .skills-grid{
+        grid-template-columns: auto auto;
+        row-gap: 30px;
+    }
+
+    .skill-item{
+        flex-direction: column-reverse;
+        justify-content: start;
+        align-items: center;
+        gap: 5px;
+    }
+    .skill-name{
+        text-align: center;
+        
+    }
+
+}
