@@ -88,10 +88,14 @@ a{
     .github-repository{
         margin-top: 0px;
         flex-direction: row-reverse;
-        
-        align-items: center;
-        justify-content: flex-end;
+        justify-content: flex-start;
         font-size: 6vw;
+        margin-top: 20px;
+    }
+
+    .github-repository a{
+        align-items: center;
+
     }
 
     .grid-projects.large,.grid-projects.small{
@@ -107,4 +111,7 @@ a{
     .grid-projects.small{
         margin-top: 50px;
     }
+
+    .project2-container{
+    }    
 }

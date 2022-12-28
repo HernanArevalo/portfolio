@@ -23,7 +23,7 @@
     font-size: 90px;
     line-height: 90px;
     color: rgb(238, 117, 74);
-    
+    position: relative;
 }
 
 .me1-grid1-container > h3{
@@ -162,19 +162,22 @@
         flex-direction: column;
         justify-content: space-between;
         height: auto;
+        top: -40px;
     }
     .me1-grid1-container {
         width: 100%;
     }
     .me1-grid1-container > h2{
         font-size: 12vw;
-        top: -4vh;
     }
     .me1-grid1-container > h3{
         font-size: 7vw;
+        top: -25px;
     }
     .me1-grid2-container{
         width: 100%;
+        top: 0px;
+        margin-top: 20px;
     }
     .studies{
         margin-top: 0px;
@@ -183,5 +186,19 @@
     .me2-container{
         height: auto;
         bottom: 0px;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 30px;
+    }
+    
+    .me2-grid1-container{
+        width: 100%;
+    }
+    .me2-grid1-container > span{
+        font-size: 6vw;
+    }
+    .me2-grid2-container{
+        justify-content: center;
+        align-items: center;
     }
 }
