@@ -164,9 +164,13 @@ textarea:focus{
         position: relative;
     }
 
+    .email, .linkedin-link{
+        font-size: 6vw;
+    }
+
     .contact-right{
         margin-top: 40px;
-        width: 80%;
+        width: 85%;
     }
 
     input, textarea{
