@@ -40,7 +40,7 @@
 
 .skills-grid{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, 300px);
     grid-template-rows: auto auto auto;
     row-gap: 50px;
     column-gap: 30px;

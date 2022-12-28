@@ -42,6 +42,19 @@ a{
     height: 38%;
 }
 
+.github-repository{
+    align-items: flex-end;
+    
+}
+
+.github-repository a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    color: rgb(238, 117, 74);
+}
+
 @media (max-height: 810px) {
     .project2-container{
         height: calc(100% - 215px);

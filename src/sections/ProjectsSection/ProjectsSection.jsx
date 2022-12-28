@@ -26,8 +26,8 @@ export const ProjectsSection = () => {
             </div>
           </div>
 
-          <a href="https://github.com/HernanArevalo" target="_blank">
-            <div className="github-repository">
+          <div className="github-repository">
+            <a href="https://github.com/HernanArevalo" target="_blank">
               GitHub repository
               <box-icon type='logo' 
                               name='github' 
@@ -35,8 +35,8 @@ export const ProjectsSection = () => {
                               size="50px" 
                               className="github-logo"
                     ></box-icon>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
 
 

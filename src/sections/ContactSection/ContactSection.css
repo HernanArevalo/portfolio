@@ -46,7 +46,7 @@ label{
 }
 
 textarea, input{
-    width: 70%;
+    width: 80%;
     background-color: rgb(246, 218, 85);
     border: none;
     border-radius: 15px;
@@ -81,6 +81,7 @@ textarea:focus{
 
 .email, .linkedin-link{
     cursor: pointer;
+    font-size: 30px;
 
 }
 
@@ -119,7 +120,8 @@ textarea:focus{
 }
 
 .submit-button:hover{
-    scale: 0.9
+    scale: 0.9;
+
 }
 
 @media (max-width: 1400px) {
@@ -132,6 +134,10 @@ textarea:focus{
     }
     .contact-right form{
         gap: 5px;
+    }
+
+    textarea, input{
+        width: 90%;
     }
 
 }

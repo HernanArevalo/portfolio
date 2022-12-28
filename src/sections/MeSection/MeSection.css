@@ -103,7 +103,7 @@
     border: 6px solid rgb(238, 117, 74);
 }
 
-@media (max-width: 1480px) {
+@media (max-width: 1500px) {
     .me-container{
         width: 100%;
     }
@@ -114,27 +114,29 @@
 
 @media (max-width: 1400px) {
     .me1-container{
-        height: 40vh;
+        top: -55px;
+    }
 
-    }
-    .me2-container{
-        height: 60vh;
-    }
 
     .me1-grid1-container > h2{
         font-size: 70px;
-        top: -40px;
     }
 
     .me1-grid2-container, .me1-grid1-container {
         width: 50%;
     }
     .me1-grid1-container > h3{
-        top: -50px;
+        top: -15px;
     }
 
     .me1-grid2-container{
         top: 20px;
+    }
+
+    .me2-grid2-container > img{
+        height: 200px;
+        width: 200px;
+
     }
 
 
