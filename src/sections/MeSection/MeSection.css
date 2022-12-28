@@ -186,7 +186,7 @@
     .me2-container{
         height: auto;
         bottom: 0px;
-        flex-direction: column;
+        flex-direction: column-reverse;
         margin-top: 20px;
         gap: 30px;
     }
