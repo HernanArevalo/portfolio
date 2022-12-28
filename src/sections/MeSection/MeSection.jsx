@@ -5,9 +5,9 @@ import profile from '/assets/me-section/profile.jpg'
 export const MeSection = () => {
   return (
 <div className="me-container" id="me">
+          <div className="section-title">Me</div>
           <div className="me1-container">
             <div className="me1-grid1-container">
-              <div className="section-title">Me</div>
               <h2>Hernán Arévalo</h2>
               <h3>Frontend developer</h3>
             </div>
