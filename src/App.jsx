@@ -19,10 +19,12 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="medidas-fix">
+
+      {/* <div className="medidas-fix">
                         {`Height: ${height}px - Width: ${width}px`}
 
-      </div>
+      </div> */}
+
       <div className="content">
 
         <MeSection/>
