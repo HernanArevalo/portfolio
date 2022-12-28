@@ -10,6 +10,8 @@ export const SkillsSection = () => {
   return (
     <div className="skills-container" id="skills">
         <div className="section-title">Skills</div>
+
+
         <div className="skills">
           <div className="skills-grid">
             { skills.map(skill => (<SkillsItem skill={skill} key={ skill.name }/>))}

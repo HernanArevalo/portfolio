@@ -1,51 +1,51 @@
 { "skills": [
     {
       "name": "React.js",
-      "image_file": "reactjs.png"
+      "image_file": "reactjs.svg"
     },
     {
       "name": "React Redux",
-      "image_file": "redux.png"
+      "image_file": "redux.svg"
     },
     {
       "name": "React Router",
-      "image_file": "router.png"
+      "image_file": "router.svg"
     },
     { 
       "name": "Javascript",
-      "image_file": "javascript.png"
+      "image_file": "javascript.svg"
     }, 
     {
       "name": "python",
-      "image_file": "python.png"
+      "image_file": "python.svg"
     },
     {
       "name": "Firebase Firestore",
-      "image_file": "firebase.png"
+      "image_file": "firebase.svg"
     },
     {
       "name": "Bootstrap",
-      "image_file": "bootstrap.png"
+      "image_file": "bootstrap.svg"
     },
     {
-      "name": "Material UI",
-      "image_file": "mui.png"
+      "name": "Figma",
+      "image_file": "figma.svg"
     },
     { 
     "name": "Html Css",
-    "image_file": "htmlcss.png"
+    "image_file": "htmlcss.svg"
   },
   {
     "name": "Illustrator",
-    "image_file": "illustrator.png"
+    "image_file": "illustrator.svg"
   },
   {
     "name": "Photoshop",
-    "image_file": "photoshop.png"
+    "image_file": "photoshop.svg"
   },
     {
       "name": "Premiere",
-      "image_file": "premiere.png"
+      "image_file": "premiere.svg"
     }
      
   ]}
