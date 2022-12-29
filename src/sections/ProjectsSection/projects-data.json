@@ -56,17 +56,7 @@
       "github_url": "https://github.com/HernanArevalo/twitter-app"
 
     },
-    {
-      "name": "Gifs App",
-      "pc": true,
-"      mobile": false,
-      "url": "https://hernanarevalo.github.io/react-gifexpert-app/",
-      "description": "React.JS simple website to search gifs.",
-      "size": "s",
-      "image_name": "gifs-app.png",
-      "github_url": "https://github.com/HernanArevalo/react-gifexpert-app"
 
-    },
     {
       "name": "Landing 1",
       "pc": true,
@@ -88,5 +78,17 @@
       "image_name": "landing-2.png",
       "github_url": "https://github.com/HernanArevalo/landing-2"
 
+    }
+],
+  "oterprojects":[
+    {
+      "name": "Gifs App",
+      "pc": true,
+      " mobile": false,
+      "url": "https://hernanarevalo.github.io/react-gifexpert-app/",
+      "description": "React.JS simple website to search gifs.",
+      "size": "s",
+      "image_name": "gifs-app.png",
+      "github_url": "https://github.com/HernanArevalo/react-gifexpert-app"
     }
 ]}
