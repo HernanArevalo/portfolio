@@ -133,4 +133,11 @@
         width: auto;
     }
 
+    .skill-image:hover .skill-image-svg{
+        filter: invert(59%) sepia(29%) saturate(3074%) hue-rotate(331deg) brightness(99%) contrast(88%);
+    }
+    
+    .skill-image:hover .image-background{
+        background-color: rgb(246, 218, 85);
+    }
 }
