@@ -14,9 +14,8 @@ export const MeSection = () => {
 
             <div className="me1-grid2-container">
               <div className="studies">
-                  <span>Bachiller Humanista.</span>
                   <span>Information systems engineering student.</span>
-                  <span>Intermediate English level (FL - UNC).</span>
+                  <span>B1 English level (FL - UNC).</span>
                   <span>Website project developer.</span>
               </div>
               <p className="ubication">
@@ -36,6 +35,11 @@ export const MeSection = () => {
             <div className="me2-grid2-container">
               <img src={ profile } alt=""/>
             </div>
+          </div>
+
+          <div className="likes-container animate__animated animate__flipInY">
+            <box-icon type='solid' name='heart' className="likes-heart" color="rgb(238, 117, 74)"></box-icon>
+            <div className="likes-counter">12</div>
           </div>
         </div>  )
 }
