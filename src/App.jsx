@@ -1,29 +1,16 @@
-import { useEffect, useState } from 'react'
-import './App.css'
 
-import { Navbar } from './components'
 import { MeSection, ProjectsSection, SkillsSection, ContactSection } from './sections'
+import { Navbar, Likes } from './components'
+import './App.css'
 
 function App() {
 
-  const [height, setHeight] = useState( window.innerHeight )
-  const [width, setWidth] = useState( window.innerWidth )
 
-
-
-  window.addEventListener('resize', function() {
-    setHeight( window.innerHeight )
-    setWidth( window.innerWidth )
-  });
 
   return (
     <div className="App">
       <Navbar />
-
-      {/* <div className="medidas-fix">
-          {`Height: ${height}px - Width: ${width}px`}
-
-      </div> */}
+      <Likes />
 
       <div className="content">
 
@@ -33,6 +20,7 @@ function App() {
         <ContactSection />
 
       </div>
+
     </div>
   )
 }

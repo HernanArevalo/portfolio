@@ -37,9 +37,6 @@ export const MeSection = () => {
             </div>
           </div>
 
-          <div className="likes-container animate__animated animate__flipInY">
-            <box-icon type='solid' name='heart' className="likes-heart" color="rgb(238, 117, 74)"></box-icon>
-            <div className="likes-counter">12</div>
-          </div>
+          
         </div>  )
 }
