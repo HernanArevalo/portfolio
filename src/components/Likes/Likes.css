@@ -23,9 +23,7 @@
     user-select: none;
 }
 
-.likes-heart{
 
-}
 
 .likes-container::after{
     content: "";
