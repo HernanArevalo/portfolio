@@ -1,6 +1,7 @@
 
 import { MeSection, ProjectsSection, SkillsSection, ContactSection } from './sections'
 import { Navbar, Likes } from './components'
+
 import './App.css'
 
 function App() {
