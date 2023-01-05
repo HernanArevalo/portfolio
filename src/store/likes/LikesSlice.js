@@ -3,18 +3,28 @@ import { createSlice } from '@reduxjs/toolkit';
 export const likesSlice = createSlice({
     name: 'likes',
     initialState: {
-        counter: 10
+        likesCounter: '',
+        isSaving: true,
     },
     reducers: {
-        increment: (state, /* action */ ) => {
-            state.counter += 1;
+        setLikes: (state, action ) => {
+            state.likesCounter = action.payload;
         },
-        decrement: (state, /* action */ ) => {
-            state.counter -= 1;
+        addLike: ( state, action ) => {
+            state.likesCounter = action.payload;
+        },
+        removeLike: ( state, action ) => {
+            state.likesCounter = action.payload;
+        },
+        isSaving: ( state ) => {
+            state.isSaving = true;
+        },
+        notSaving: ( state ) => {
+            state.isSaving = false;
         },
     }
 });
 
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement } = likesSlice.actions;
+export const { setLikes, addLike, removeLike, isSaving, notSaving } = likesSlice.actions;

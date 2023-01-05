@@ -7,6 +7,7 @@
     padding: 0 10px;
     border-radius: 20%;
     background-color: rgb(246, 218, 85);
+    border: none;
     top: 3%;
     right: 3.5%;
     display: flex;
@@ -24,7 +25,6 @@
 }
 
 
-
 .likes-container::after{
     content: "";
     position: absolute;
@@ -35,4 +35,10 @@
     border-right: 10px solid transparent;
     
     border-top: 10px solid rgb(246, 218, 85);
+}
+
+@media (max-width: 500px) {
+    .likes-container{
+        top: 100px;
+    }
 }

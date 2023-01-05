@@ -1,63 +1,51 @@
 import { useEffect, useState } from 'react';
-import { collection, deleteDoc, doc, setDoc, getDoc } from 'firebase/firestore/lite';
-import { FirebaseDB } from '../../firebase/config.js';
+import { useSelector, useDispatch } from 'react-redux'
+
 import './Likes.css'
+import { startAddingLike, startLoadLikes, startRemovingLike } from '../../store/likes/thunks.js';
 
 export const Likes = () => {
 
-    const [liked, setLiked] = useState( false )    
-    const [likes, setLikes] = useState( null )  // ? CREAR SLICE PARA LEER LOS LIKES DESDE REDUX
+    const dispatch = useDispatch();
+    dispatch( startLoadLikes() )
+
+    const { likesCounter } = useSelector( state => state.likes );
+    const { isSaving } = useSelector( state => state.likes );
 
 
 
-    async() => {
-
-        const docRef = doc( FirebaseDB, "likes", "counter");
-        const docSnap = await getDoc(docRef);
-    
-        setLikes(docSnap.data().count );
-    }
-
-
-
-
-    if ( localStorage.getItem("liked") == null ) {
-        localStorage.setItem("liked", false )
-        
-    }
+    const [liked, setLiked] = useState( localStorage.getItem("liked") )    
+    const [likes, setLikes] = useState( likesCounter )
 
 
     useEffect(() => {
-      localStorage.setItem("liked", liked )
-    }, [ liked ])
+        setLikes( likesCounter )
+    }, [ likesCounter ])
     
 
 
-    const onLikeClicked = async() => {
-        
-        if (liked == false) {
-            setLikes( likes+1 )
-            await setDoc(doc( FirebaseDB, "likes", "counter"), {
-                count: likes+1,
-            });
-            
+
+
+    const onLikeClicked = (e) => {
+        e.preventDefault()
+
+        if ( localStorage.getItem("liked") == "true" ) {
+            dispatch( startRemovingLike() )
+            setLiked( "false" )
         }else{
-            setLikes( likes-1 )
-            await setDoc(doc( FirebaseDB, "likes", "counter"), {
-                count: likes-1,
-            });
+            dispatch( startAddingLike() )
+            setLiked( "true" )
+
         }
-        
-        
-        
-        
-        setLiked( !liked)
     }
 
 
   return (
-    <div className="likes-container animate__animated animate__flipInY animate__delay-1s" onClick={ onLikeClicked }>
-        { liked == false?
+    <button className="likes-container animate__animated animate__flipInY animate__delay-1s" 
+         onClick={ onLikeClicked }
+         disabled={ isSaving }
+         >
+        { liked == "false"?
         <box-icon type="regular"
                   name='heart'
                   className="likes-heart"
@@ -72,7 +60,7 @@ export const Likes = () => {
 
 
         }
-        <div className="likes-counter">{`${likes}`}</div>
-    </div>
+        <div className="likes-counter">{likes}</div>
+    </button>
   )
 }
