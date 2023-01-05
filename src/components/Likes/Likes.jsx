@@ -23,7 +23,9 @@ export const Likes = () => {
     }, [ likesCounter ])
     
 
-
+    if ( localStorage.getItem("liked") != "true" && localStorage.getItem("liked") != "false"){
+        localStorage.setItem("liked", "false")
+    }
 
 
     const onLikeClicked = (e) => {
