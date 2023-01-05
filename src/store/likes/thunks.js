@@ -18,8 +18,6 @@ export const startLoadLikes = () => {
 export const startAddingLike = () => {
     return async(dispatch, getState) =>{
 
-        console.log('adding');
-
         dispatch( isSaving() )
         
         
@@ -40,8 +38,6 @@ export const startAddingLike = () => {
 
 export const startRemovingLike = () => {
     return async(dispatch, getState) =>{
-
-        console.log('removing');
 
         dispatch( isSaving() )
 
