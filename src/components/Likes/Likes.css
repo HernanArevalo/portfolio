@@ -37,6 +37,10 @@
     border-top: 10px solid rgb(246, 218, 85);
 }
 
+.likes-counter{
+    margin-left: 5px;
+}
+
 @media (max-width: 500px) {
     .likes-container{
         top: 100px;
