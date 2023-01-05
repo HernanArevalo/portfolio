@@ -109,6 +109,15 @@
         width: 75%;
     }
 
+    .large .project-description{
+        font-size: 18px;
+
+    }
+    .small .project-description{
+        font-size: 15px;
+
+    }
+
     .github-logo{
         width: 50%;
     }
@@ -152,9 +161,6 @@
         height: auto;
     }
 
-    .grid-projects.small{
-
-    }
 
     .project-image img{
         width: 70px;
