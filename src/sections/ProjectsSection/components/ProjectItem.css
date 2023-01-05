@@ -106,15 +106,15 @@
     .project-description{
         color: rgb(246, 218, 85);
         font-weight: 400;
-        width: 75%;
+        width: calc(100% - 50px);
     }
 
     .large .project-description{
-        font-size: 18px;
+        font-size: 20px;
 
     }
     .small .project-description{
-        font-size: 15px;
+        font-size: 17px;
 
     }
 
