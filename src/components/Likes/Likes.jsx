@@ -13,6 +13,9 @@ export const Likes = () => {
     const { isSaving } = useSelector( state => state.likes );
 
 
+    if ( localStorage.getItem("liked") == null){
+         localStorage.setItem("liked", "false")
+    }
 
     const [liked, setLiked] = useState( localStorage.getItem("liked") )    
     const [likes, setLikes] = useState( likesCounter )
@@ -22,9 +25,6 @@ export const Likes = () => {
         setLikes( likesCounter )
     }, [ likesCounter ])
     
-    if ( localStorage.getItem("liked") == null){
-         localStorage.setItem("liked", "false")
-    }
 
 
     const onLikeClicked = (e) => {
@@ -46,14 +46,14 @@ export const Likes = () => {
          onClick={ onLikeClicked }
          disabled={ isSaving }
          >
-        { liked == "false"?
-        <box-icon type="regular"
+        { liked == "true"?
+        <box-icon type="solid"
                   name='heart'
                   className="likes-heart"
                   color="rgb(238, 117, 74)">
         </box-icon>
         :
-        <box-icon type="solid"
+        <box-icon type="regular"
                   name='heart'
                   className="likes-heart"
                   color="rgb(238, 117, 74)">
