@@ -39,6 +39,7 @@
 
 .likes-counter{
     margin-left: 5px;
+    font-size: 18px;
 }
 
 @media (max-width: 500px) {
