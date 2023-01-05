@@ -60,7 +60,8 @@
 }
 
 .skill-image-svg{
-    height: 70%;
+    width: 80%;
+    height: 80%;
     margin: 0% auto;
     margin: 0 10%;
     filter: invert(59%) sepia(29%) saturate(3074%) hue-rotate(331deg) brightness(99%) contrast(88%);
