@@ -4,6 +4,7 @@ export const likesSlice = createSlice({
     name: 'likes',
     initialState: {
         likesCounter: '',
+        isLoaded: false,
         isSaving: true,
     },
     reducers: {
@@ -22,9 +23,15 @@ export const likesSlice = createSlice({
         notSaving: ( state ) => {
             state.isSaving = false;
         },
+        isLoaded: ( state ) => {
+            state.isLoaded = true;
+        },
+        notLoaded: ( state ) => {
+            state.isLoaded = false;
+        },
     }
 });
 
 
 // Action creators are generated for each case reducer function
-export const { setLikes, addLike, removeLike, isSaving, notSaving } = likesSlice.actions;
+export const { setLikes, addLike, removeLike, isSaving, notSaving, isLoaded, notLoaded } = likesSlice.actions;

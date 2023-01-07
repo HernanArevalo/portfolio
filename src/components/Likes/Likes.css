@@ -24,6 +24,9 @@
     user-select: none;
 }
 
+.display-none{
+    display: none
+}
 
 .likes-container::after{
     content: "";

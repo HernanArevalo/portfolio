@@ -1,6 +1,6 @@
 import { doc, getDoc, setDoc } from "firebase/firestore/lite";
 import { FirebaseDB } from "../../firebase/config";
-import { notSaving, removeLike, isSaving, setLikes, addLike } from "./LikesSlice";
+import { notSaving, removeLike, isSaving, setLikes, addLike, isLoaded } from "./LikesSlice";
 
 export const startLoadLikes = () => {
     return async(dispatch, getState) =>{
@@ -9,30 +9,31 @@ export const startLoadLikes = () => {
         const docSnap = await getDoc(docRef);
         const { count } = docSnap.data();
 
-        dispatch( setLikes( count ))
+        dispatch( setLikes( count ));
 
-        dispatch( notSaving() )
+        dispatch( notSaving() );
+        dispatch( isLoaded() );
     }
 }
 
 export const startAddingLike = () => {
     return async(dispatch, getState) =>{
 
-        dispatch( isSaving() )
+        dispatch( isSaving() );
         
         
         const { likesCounter } = getState().likes;
-        const newValue = likesCounter+1
+        const newValue = likesCounter+1;
         
-        dispatch( addLike(newValue) )
+        dispatch( addLike(newValue) );
 
         await setDoc(doc( FirebaseDB, "likes", "counter"), {
             count: newValue
           });
 
-        localStorage.setItem("liked", true)
+        localStorage.setItem("liked", true);
 
-        dispatch( notSaving() )
+        dispatch( notSaving() );
     }
 }
 

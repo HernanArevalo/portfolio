@@ -12,7 +12,6 @@ export const Likes = () => {
     const { likesCounter } = useSelector( state => state.likes );
     const { isSaving } = useSelector( state => state.likes );
 
-
     if ( localStorage.getItem("liked") == null){
          localStorage.setItem("liked", "false")
     }
@@ -25,6 +24,8 @@ export const Likes = () => {
         setLikes( likesCounter )
     }, [ likesCounter ])
     
+
+
 
 
     const onLikeClicked = (e) => {
@@ -42,26 +43,28 @@ export const Likes = () => {
 
 
   return (
-    <button className="likes-container animate__animated animate__flipInY animate__delay-1s" 
-         onClick={ onLikeClicked }
-         disabled={ isSaving }
-         >
-        { liked == "true"?
-        <box-icon type="solid"
-                  name='heart'
-                  className="likes-heart"
-                  color="rgb(238, 117, 74)">
-        </box-icon>
-        :
-        <box-icon type="regular"
-                  name='heart'
-                  className="likes-heart"
-                  color="rgb(238, 117, 74)">
-        </box-icon>
-
-
-        }
-        <div className="likes-counter">{likes}</div>
-    </button>
+        <button className="likes-container animate__animated animate__flipInY animate__delay-2s"
+             onClick={ onLikeClicked }
+             disabled={ isSaving }
+             opacity={ "0.5" }
+             >
+            { liked == "true"?
+            <box-icon type="solid"
+                      name='heart'
+                      className="likes-heart"
+                      color="rgb(238, 117, 74)">
+            </box-icon>
+            :
+            <box-icon type="regular"
+                      name='heart'
+                      className="likes-heart"
+                      color="rgb(238, 117, 74)">
+            </box-icon>
+    
+    
+            }
+            <div className="likes-counter">{likes}</div>
+        </button>
+        
   )
 }
