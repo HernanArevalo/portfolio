@@ -70,7 +70,7 @@
 }
 
 .me2-grid1-container{
-    width: calc(100% - 280px);
+    width: calc(100% - 320px);
     color: rgb(246, 218, 85);
     text-align: left;
     display: flex;

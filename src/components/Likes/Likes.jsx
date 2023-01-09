@@ -60,7 +60,7 @@ export const Likes = () => {
     
     
             }
-            <div className="likes-counter">{likes}</div>
+            <div className="likes-counter">{ likes }</div>
         </button>
         
   )
