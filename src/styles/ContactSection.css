@@ -119,10 +119,16 @@ textarea:focus{
     margin-top: 5px;
 }
 
-.submit-button:hover{
+.submit-button:hover:enabled{
     scale: 0.9;
 
 }
+
+.submit-button:disabled{
+    filter: grayscale();
+
+}
+
 
 @media (max-width: 1400px) {
     .contact{

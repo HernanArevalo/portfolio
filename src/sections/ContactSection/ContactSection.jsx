@@ -23,6 +23,8 @@ export const ContactSection = () => {
     message: ''
   })
 
+  console.log(name);
+
 
   return (
     <div className="contact-container" id="contact">
@@ -84,7 +86,7 @@ export const ContactSection = () => {
                       value = { message }
                       onChange = { onInputChange }
               />
-              <button className="submit-button"type="submit" onClick={ onResetForm }>Send</button>
+              <button disabled={name.trim() == '' || message.trim() == ''} className="submit-button"type="submit" onClick={ onResetForm }>Send</button>
             </form>
           </div>
         </div>
