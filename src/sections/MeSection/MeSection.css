@@ -45,7 +45,7 @@
 }
 
 .studies{
-    font-size: 25px;
+    font-size: 26px;
     gap: 5px;
     color: rgb(246, 218, 85);
     display: flex;
@@ -79,14 +79,14 @@
 }
 .me2-grid1-container span{
     font-weight: 600;
-    font-size: 24px;
+    font-size: 28px;
     
 }
 
-.span-1{
+.me2-grid1-container > .span-1{
     color: rgb(246, 218, 85);
 }
-.span-2{
+.me2-grid1-container > .span-2{
     color: rgb(238, 117, 74);
 }
 

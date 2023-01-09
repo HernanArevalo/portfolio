@@ -25,9 +25,6 @@ export const Likes = () => {
     }, [ likesCounter ])
     
 
-
-
-
     const onLikeClicked = (e) => {
         e.preventDefault()
 
