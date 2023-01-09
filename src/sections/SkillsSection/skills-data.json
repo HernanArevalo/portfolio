@@ -15,26 +15,26 @@
       "name": "Javascript",
       "image_file": "javascript.svg"
     }, 
+    { 
+      "name": "Html Css",
+      "image_file": "htmlcss.svg"
+    },
     {
       "name": "python",
       "image_file": "python.svg"
+    },
+    {
+      "name": "Typescript",
+      "image_file": "typescript.svg"
     },
     {
       "name": "Firebase Firestore",
       "image_file": "firebase.svg"
     },
     {
-      "name": "Bootstrap",
-      "image_file": "bootstrap.svg"
-    },
-    {
       "name": "Figma",
       "image_file": "figma.svg"
     },
-    { 
-    "name": "Html Css",
-    "image_file": "htmlcss.svg"
-  },
   {
     "name": "Adobe Illustrator",
     "image_file": "illustrator.svg"
