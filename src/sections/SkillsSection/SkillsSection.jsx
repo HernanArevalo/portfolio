@@ -1,7 +1,6 @@
 import React from 'react'
 import { SkillsItem } from './components/SkillsItem'
 import { skills } from './skills-data.json'
-import './SkillsSection.css'
 
 
 export const SkillsSection = () => {

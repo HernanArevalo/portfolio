@@ -1,5 +1,3 @@
-import React from 'react'
-import './MeSection.css'
 import profile from '/assets/me-section/profile.jpg'
 
 export const MeSection = () => {
@@ -28,12 +26,13 @@ export const MeSection = () => {
             <div className="me2-grid1-container">
                   <span className='span-1'>Frontend knowledge of HTML, CSS, Javascript, React and Redux.</span>
                   <span className='span-2'>Strong understanding of design principles, Modular CSS, and responsive design.</span>
-                  <span className='span-1'>Passionate learner of new technologies and tools with fast learning capability.</span>
-                  <span className='span-2'>Positive attitude, strong work ethic and out-of-the-box thinking.</span>
+                  <span className='span-1'>I enjoy working in team-based environments and am constantly seeking ways to improve my skills and offer innovative solutions to technical challenges.</span>
+                  <span className='span-2'>Passionate learner of new technologies and tools with fast learning capability.</span>
+                  <span className='span-1'>Positive attitude, strong work ethic and out-of-the-box thinking.</span>
               
             </div>
             <div className="me2-grid2-container">
-              <img src={ profile } alt=""/>
+              <img src={ profile } alt="profile-picture"/>
             </div>
           </div>
 

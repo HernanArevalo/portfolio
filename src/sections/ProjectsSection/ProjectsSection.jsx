@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { ProjectItem } from './components/ProjectItem';
 import { ProjectItemReduced } from './components/ProjectItemReduced';
 import { projects } from './projects-data.json'

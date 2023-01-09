@@ -1,7 +1,5 @@
-import React from 'react'
 import { useState } from 'react'
 import { useForm } from '../../hooks/useForm/useForm'
-import './ContactSection.css'
 
 export const ContactSection = () => {
 

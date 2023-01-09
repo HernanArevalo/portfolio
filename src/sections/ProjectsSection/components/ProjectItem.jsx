@@ -1,4 +1,4 @@
-import './ProjectItem.css'
+import './styles/ProjectItem.css'
 
 export const ProjectItem = ( {project} ) => {
 
