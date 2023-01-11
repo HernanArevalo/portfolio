@@ -23,8 +23,6 @@ export const ContactSection = () => {
     message: ''
   })
 
-  console.log(name);
-
 
   return (
     <div className="contact-container" id="contact">
