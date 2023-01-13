@@ -26,8 +26,8 @@
     {
       "name": "Journal App",
       "pc": true,
-      "mobile": false,
-      "url": "#",
+      "mobile": true,
+      "url": "https://journal-app-ha.vercel.app/",
       "description": "React.JS website to save your journal with comments and images.",
       "size": "l",
       "image_name": "journal-app.png",
@@ -48,8 +48,8 @@
     {
       "name": "Twitter clone",
       "pc": true,
-      "mobile": false,
-      "url": "#",
+      "mobile": true,
+      "url": "https://twitter-app-alpha.vercel.app/",
       "description": "Twitter App clone with React.JS. With no responses yet.",
       "size": "s",
       "image_name": "twitter.png",
