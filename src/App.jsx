@@ -18,7 +18,7 @@ function App() {
 
       <div className="content">
 
-        <MeSection/>
+        <MeSection />
         <ProjectsSection />
         <SkillsSection />
         <ContactSection />
