@@ -1,33 +1,8 @@
 import profile from '/assets/me-section/profile.jpg'
 
-import { en, es } from '../../data/info.json'
-import { useNavigate } from 'react-router-dom'
-import { useEffect, useState } from 'react'
 
-export const MeSection = () => {
+export const MeSection = ({info}) => {
 
-  const navigate = useNavigate()
-  
-  const pathname = window.location.pathname
-
-  useEffect(() => {
-
-    if (!pathname.includes('es') && !pathname.includes('en')) {
-      navigate('/en')
-    }
-
-  }, [])
-
-
-  const [info, setInfo] = useState( pathname.includes('es')? es:en )
-
-  useEffect(() => {
-    
-    setInfo( pathname.includes('es')? es:en )
-
-  }, [pathname])
-  
-  
 
 
   return (

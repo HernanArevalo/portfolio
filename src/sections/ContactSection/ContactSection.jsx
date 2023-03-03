@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useForm } from '../../hooks/useForm/useForm'
 
-export const ContactSection = () => {
+export const ContactSection = ({info}) => {
 
   const [copied, setCopied] = useState(false)
 
@@ -27,7 +27,7 @@ export const ContactSection = () => {
   return (
     <div className="contact-container" id="contact">
 
-        <div className="section-title">Contact</div>
+        <div className="section-title">{ info.contact.title }</div>
 
         <div className="contact">
           <div className="contact-left">
@@ -39,7 +39,7 @@ export const ContactSection = () => {
             </box-icon>
             <div className="email-container">
               <div className='email' onClick={ onClickEmail }>hernanarevalo16@gmail.com</div>
-              {copied? <div className='copied'>email copied!</div>: null}
+              {copied? <div className='copied'>{ info.contact.emailCopied }</div>: null}
             </div>
 
             <box-icon color="rgb(238, 117, 74)" 
@@ -60,7 +60,7 @@ export const ContactSection = () => {
                   action="https://formsubmit.co/hernanarevalo16@gmail.com" 
                   method="POST"
             >
-              <label>Name</label>
+              <label>{ info.contact.name }</label>
               <input 
                       type="text" 
                       className='name-input' 
@@ -68,7 +68,7 @@ export const ContactSection = () => {
                       value = { name }
                       onChange = { onInputChange }
               />
-              <label>Email</label>
+              <label>{ info.contact.email }</label>
               <input 
                       type="text" 
                       className='email-input' 
@@ -76,7 +76,7 @@ export const ContactSection = () => {
                       value = { email }
                       onChange = { onInputChange }
               />
-              <label>Message</label>
+              <label>{ info.contact.message }</label>
               <textarea 
                       type="text" 
                       className='message-input' 
@@ -84,7 +84,7 @@ export const ContactSection = () => {
                       value = { message }
                       onChange = { onInputChange }
               />
-              <button disabled={name.trim() == '' || message.trim() == ''} className="submit-button"type="submit" onClick={ onResetForm }>Send</button>
+              <button disabled={name.trim() == '' || message.trim() == ''} className="submit-button"type="submit" onClick={ onResetForm }>{ info.contact.send }</button>
             </form>
           </div>
         </div>

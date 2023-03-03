@@ -12,7 +12,8 @@
     width: 70PX;
     z-index: 10000;
     cursor: pointer;
-    display: none;
+    user-select: none;
+    /* display: none; */
 }
 
 .lang{

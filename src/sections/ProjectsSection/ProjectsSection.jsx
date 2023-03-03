@@ -1,10 +1,9 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { ProjectItem } from './components/ProjectItem';
 import { ProjectItemReduced } from './components/ProjectItemReduced';
 import { projects } from './projects-data.json'
-import { en, es } from '../../data/info.json'
 
-export const ProjectsSection = () => {
+export const ProjectsSection = ({info}) => {
 
   const [height, setHeight] = useState( window.innerHeight )
   const [width, setWidth] = useState( window.innerWidth )
@@ -17,15 +16,6 @@ export const ProjectsSection = () => {
   });
 
  
-  const pathname = window.location.pathname
-
-  const [info, setInfo] = useState( pathname.includes('es')? es:en )
-
-  useEffect(() => {
-    
-    setInfo( pathname.includes('es')? es:en )
-
-  }, [pathname])
 
 
   return (
