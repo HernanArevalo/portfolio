@@ -52,3 +52,14 @@
 .en-active{
     left:50%;
 }
+
+@media (max-width: 500px){
+    .lang-container{
+        top: auto;
+        bottom: 20px;
+        right: 20px;
+        left: auto;
+        height: 40px;
+        width: 80px;
+    }
+}
