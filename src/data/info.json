@@ -1,0 +1,69 @@
+{
+	"en":{
+		"me":{
+			"title":"Me",
+			"name":"Hernán Arévalo",
+			"charge":"Frontend Developer",
+			"studies1":"Information systems engineering student.",
+			"studies2":"B1 English level (FL - UNC).",
+			"studies3":"Website project developer.",
+			"location":"Córdoba, Argentina",
+			"description1":"Frontend knowledge of React, Redux, Nextjs, html and css.",
+			"description2":"Strong understanding of design principles, Modular CSS, and responsive design.",
+			"description3":"I enjoy working in team-based environments and am constantly seeking ways to improve my skills and offer innovative solutions to technical challenges.",
+			"description4":"Passionate learner of new technologies and tools with fast learning capability",
+			"description5":"Positive attitude, strong work ethic and out-of-the-box thinking."
+		},
+		"projects":{
+			"title":"Projects",
+			"respository":"GitHub repository"
+		},
+		"skills":{
+			"title":"Skills"
+		},
+		"contact":{
+			"title":"Contact",
+			"emailCopied":"email copied!",
+			"name":"Name",
+			"email":"Email",
+			"message":"Message",
+			"send":"send"
+
+		}
+		
+	},
+	"es":{
+		"me":{
+			"title":"Yo",
+			"name":"Hernán Arévalo",
+			"charge":"Desarrollador Frontend",
+			"studies1":"Estudiante de Ingeniería en Sistemas.",
+			"studies2":"Nivel B1 de Inglés (FL - UNC).",
+			"studies3":"Desarrollador de projectos web.",
+			"location":"Córdoba, Argentina",
+			"description1":"Conocimiento Frontend de React, Redux, Nextjs, html y css",
+			"description2":"Fuerte comprensión de los principios de diseño, CSS y diseño responsive.",
+			"description3":"Disfruto trabajando en entornos basados en equipos y constantemente busco formas de mejorar mis habilidades y ofrecer soluciones innovadoras a los desafíos técnicos.",
+			"description4":"Apasionado por aprender de nuevas tecnologías y herramientas, con capacidad de aprendizaje rápido.",
+			"description5":"Actitud positiva, fuerte ética de trabajo y pensamiento innovador."
+			
+		},
+		"projects":{
+			"title":"Projectos",
+			"respository":"Repositorio GitHub"
+		},
+		"skills":{
+			"title":"Habilidades"
+		},
+		"contact":{
+			"title":"Contacto",
+			"emailCopied":"email copiado!",
+			"name":"Nombre",
+			"email":"Correo electrónico",
+			"message":"Mensaje",
+			"send":"enviar"
+
+		}
+		
+	}
+}

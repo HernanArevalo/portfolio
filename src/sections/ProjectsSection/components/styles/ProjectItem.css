@@ -77,9 +77,7 @@
         width: 100%;
         z-index: 500;
     }
-    .project-screenshot:hover{
-        opacity: 0;
-    }
+
     .project-image > img{
         height: 100%;
         width: auto;
@@ -232,6 +230,9 @@
         justify-content: center;
         align-items: center;
     }
+    .project-image-div:hover{
+        opacity: 1;
+    }
     .project-image img{
         height: 100%;
         width: auto;
@@ -240,9 +241,7 @@
         transition: .4s;
     }
 
-    .project-image:hover img{
-        scale: 0.8;
-    }
+
 
     .project-name{
         color: rgb(238, 117, 74);

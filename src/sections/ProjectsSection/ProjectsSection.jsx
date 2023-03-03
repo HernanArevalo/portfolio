@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ProjectItem } from './components/ProjectItem';
 import { ProjectItemReduced } from './components/ProjectItemReduced';
 import { projects } from './projects-data.json'
+import { en, es } from '../../data/info.json'
 
 export const ProjectsSection = () => {
 
@@ -15,6 +16,17 @@ export const ProjectsSection = () => {
 
   });
 
+ 
+  const pathname = window.location.pathname
+
+  const [info, setInfo] = useState( pathname.includes('es')? es:en )
+
+  useEffect(() => {
+    
+    setInfo( pathname.includes('es')? es:en )
+
+  }, [pathname])
+
 
   return (
     <div className="projects-container" id="projects">
@@ -22,13 +34,13 @@ export const ProjectsSection = () => {
 
           <div className="project1-gri1-container">
             <div className="section-title">
-              Projects
+              { info.projects.title }
             </div>
           </div>
 
           <div className="github-repository">
             <a href="https://github.com/HernanArevalo" target="_blank">
-              GitHub repository
+            { info.projects.respository }
               <box-icon type='logo' 
                               name='github' 
                               color="rgb(246, 218, 85)" 
