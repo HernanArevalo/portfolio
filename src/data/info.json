@@ -27,7 +27,7 @@
 			"name":"Name",
 			"email":"Email",
 			"message":"Message",
-			"send":"send"
+			"send":"Send"
 
 		}
 		
@@ -61,7 +61,7 @@
 			"name":"Nombre",
 			"email":"Correo electrónico",
 			"message":"Mensaje",
-			"send":"enviar"
+			"send":"Enviar"
 
 		}
 		
