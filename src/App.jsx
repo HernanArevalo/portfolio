@@ -12,9 +12,6 @@ import { useEffect, useLayoutEffect } from 'react'
 
 function App(props) {
 
-
-
-
   return (
     <div className="App">
       <Navbar />
