@@ -4,7 +4,8 @@
       "pc": true,
       "mobile": true,
       "url": "https://movies-henanarevalo.netlify.app/",
-      "description": "React.JS website to see movies information.",
+      "descriptionEn": "React.JS website to see movies information.",
+      "descriptionEs": "React.JS app para ver información sobre películas.",
       "size": "l",
       "image_name": "movies-app.png",
       "github_url": "https://github.com/HernanArevalo/movies-app"
@@ -17,7 +18,8 @@
       "pc": true,
       "mobile": false,
       "url": "https://todo-app-hernanarevalo.vercel.app/",
-      "description": "React.JS website to manage your responsabilities.",
+      "descriptionEn": "React.JS website to manage your responsabilities.",
+      "descriptionEs": "React.JS app para manejar tus tareas",
       "size": "l",
       "image_name": "todo-app.png",
       "github_url": "https://github.com/HernanArevalo/todo-app"
@@ -28,7 +30,8 @@
       "pc": true,
       "mobile": true,
       "url": "https://journal-app-ha.vercel.app/",
-      "description": "React.JS website to save your journal with comments and images.",
+      "descriptionEn": "React.JS website to save your journal with comments and images.",
+      "descriptionEs": "React.JS app para guardar tu diario con comentarios e imágenes.",
       "size": "l",
       "image_name": "journal-app.png",
       "github_url": "https://github.com/HernanArevalo/journal-app"
@@ -39,7 +42,8 @@
       "pc": true,
       "mobile": true,
       "url": "https://space-tourism-hernanarevalo.vercel.app/",
-      "description": "React.JS website about space travels.",
+      "descriptionEn": "React.JS website about space travels.",
+      "descriptionEs": "React.JS app sobre viajes en el espacio.",
       "size": "s",
       "image_name": "space-tourism.png",
       "github_url": "https://github.com/HernanArevalo/space-tourism-app"
@@ -50,7 +54,8 @@
       "pc": true,
       "mobile": true,
       "url": "https://twitter-app-alpha.vercel.app/",
-      "description": "Twitter App clone with React.JS. With no responses yet.",
+      "descriptionEn": "Twitter App clone with React.JS. With no responses yet.",
+      "descriptionEs": "Clon de twitter con React.js. Solo maquetado",
       "size": "s",
       "image_name": "twitter.png",
       "github_url": "https://github.com/HernanArevalo/twitter-app"
@@ -62,7 +67,8 @@
       "pc": true,
       "mobile": false,
       "url": "https://hernanarevalo.github.io/landing-1/",
-      "description": "HTML/CSS/JS static website to show information as a blog.",
+      "descriptionEn": "Static website to show information as a blog.",
+      "descriptionEs": "Página estática para mostrar información como un blog",
       "size": "s",
       "image_name": "landing-1.png",
       "github_url": "https://github.com/HernanArevalo/landing-1"
@@ -73,7 +79,8 @@
       "pc": true,
       "mobile": false,
       "url": "https://hernanarevalo.github.io/landing-2/",
-      "description": "HTML/CSS/JS static website to show information as a blog.",
+      "descriptionEn": "Static website to show information as a blog.",
+      "descriptionEs": "Página estática para mostrar información como un blog",
       "size": "s",
       "image_name": "landing-2.png",
       "github_url": "https://github.com/HernanArevalo/landing-2"
@@ -86,7 +93,9 @@
       "pc": true,
       " mobile": false,
       "url": "https://hernanarevalo.github.io/react-gifexpert-app/",
-      "description": "React.JS simple website to search gifs.",
+      "descriptionEn": "React.JS simple website to search gifs.",
+      "descriptionEs": "React.JS app simple para buscar gifs",
+
       "size": "s",
       "image_name": "gifs-app.png",
       "github_url": "https://github.com/HernanArevalo/react-gifexpert-app"

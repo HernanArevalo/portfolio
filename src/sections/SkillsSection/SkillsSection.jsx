@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { SkillsItem } from './components/SkillsItem'
 import { skills } from './skills-data.json'
 

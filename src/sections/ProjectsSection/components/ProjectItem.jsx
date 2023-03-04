@@ -1,6 +1,17 @@
+import { useEffect, useState } from 'react'
 import './styles/ProjectItem.css'
 
 export const ProjectItem = ( {project} ) => {
+
+  const [lang, setLang] = useState('en')
+  const pathname = window.location.pathname
+
+  useEffect(() => {
+    
+    setLang( pathname.includes('es')? 'es':'en' )
+
+  }, [pathname])
+
 
   return (
     <>
@@ -35,7 +46,7 @@ export const ProjectItem = ( {project} ) => {
               
               <div className="project-bottom">
                 <div className="project-description">
-                    { project.description }
+                    { lang === 'es'? project.descriptionEs : project.descriptionEn }
                 </div>
                 <a href={ project.github_url } target="_blank">
                   <box-icon type='logo' 
