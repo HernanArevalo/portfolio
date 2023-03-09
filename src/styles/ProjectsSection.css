@@ -28,7 +28,7 @@ a{
     flex-direction: column;
     justify-content: space-around;
     height: calc(100vh - 300px);
-    gap: 40px;
+    gap: 20px;
 
 }
 
@@ -43,7 +43,7 @@ a{
     height: 48%;
 }
 .grid-projects.small{
-    height: 38%;
+    height: 35%;
 }
 
 .github-repository{
