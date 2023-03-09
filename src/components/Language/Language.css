@@ -10,7 +10,7 @@
     position: fixed;
     top: 10px;
     width: 70PX;
-    z-index: 10000;
+    z-index: 99999999;
     cursor: pointer;
     user-select: none;
     /* display: none; */
