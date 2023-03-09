@@ -19,7 +19,7 @@
       "mobile": false,
       "url": "https://todo-app-hernanarevalo.vercel.app/",
       "descriptionEn": "React.JS website to manage your responsabilities.",
-      "descriptionEs": "React.JS app para manejar tus tareas",
+      "descriptionEs": "React.JS app para manejar tus tareas.",
       "size": "l",
       "image_name": "todo-app.png",
       "github_url": "https://github.com/HernanArevalo/todo-app"
@@ -55,7 +55,7 @@
       "mobile": true,
       "url": "https://twitter-app-alpha.vercel.app/",
       "descriptionEn": "Twitter App clone with React.JS. With no responses yet.",
-      "descriptionEs": "Clon de twitter con React.js. Solo maquetado",
+      "descriptionEs": "Clon de twitter con React.js. Solo maquetado.",
       "size": "s",
       "image_name": "twitter.png",
       "github_url": "https://github.com/HernanArevalo/twitter-app"
@@ -67,8 +67,8 @@
       "pc": true,
       "mobile": false,
       "url": "https://hernanarevalo.github.io/landing-1/",
-      "descriptionEn": "Static website to show information as a blog.",
-      "descriptionEs": "Página estática para mostrar información como un blog",
+      "descriptionEn": "SPA (Single-page application)",
+      "descriptionEs": "Aplicación de una sola página.",
       "size": "s",
       "image_name": "landing-1.png",
       "github_url": "https://github.com/HernanArevalo/landing-1"
@@ -79,8 +79,8 @@
       "pc": true,
       "mobile": false,
       "url": "https://hernanarevalo.github.io/landing-2/",
-      "descriptionEn": "Static website to show information as a blog.",
-      "descriptionEs": "Página estática para mostrar información como un blog",
+      "descriptionEn": "SPA (Single-page application)",
+      "descriptionEs": "Aplicación de una sola página.",
       "size": "s",
       "image_name": "landing-2.png",
       "github_url": "https://github.com/HernanArevalo/landing-2"
@@ -94,7 +94,7 @@
       " mobile": false,
       "url": "https://hernanarevalo.github.io/react-gifexpert-app/",
       "descriptionEn": "React.JS simple website to search gifs.",
-      "descriptionEs": "React.JS app simple para buscar gifs",
+      "descriptionEs": "React.JS app simple para buscar gifs.",
 
       "size": "s",
       "image_name": "gifs-app.png",

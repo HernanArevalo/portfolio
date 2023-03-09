@@ -38,7 +38,7 @@ body{
 }
 
 .section-title{
-  font-size: 220px;
+  font-size: 200px;
   color: rgb(246, 218, 85);
   margin: 0;
   height: 260px;
@@ -55,12 +55,19 @@ body{
 @media (max-width: 1400px) {
 
   .section-title{
-      font-size: 170px;
+      font-size: 13vw;
       height: 215px;
 
   }
 }
 
+@media (max-height: 800px) {
+
+  .section-title{
+      font-size: 11vw;
+      height: auto;
+  }
+}
 
 @media (max-width: 500px) {
   .App {
@@ -76,7 +83,7 @@ body{
   }
 
   .section-title{
-    font-size: 23vw;
+    font-size: 16vw;
     height: auto;
 
 

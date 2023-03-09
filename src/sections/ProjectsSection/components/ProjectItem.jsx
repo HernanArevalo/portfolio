@@ -45,9 +45,12 @@ export const ProjectItem = ( {project} ) => {
               </div>
               
               <div className="project-bottom">
-                <div className="project-description">
-                    { lang === 'es'? project.descriptionEs : project.descriptionEn }
-                </div>
+                {
+                  <div className="project-description">
+                      { lang === 'es'? project.descriptionEs : project.descriptionEn }
+                  </div>
+
+                }
                 <a href={ project.github_url } target="_blank">
                   <box-icon type='logo' 
                             name='github' 

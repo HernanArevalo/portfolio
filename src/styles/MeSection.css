@@ -1,6 +1,6 @@
 .me-container{
     height: 100vh;
-    width: 85%;
+    width: 100%;
     text-align: left;
     box-sizing: border-box;
     display: flex;
@@ -152,6 +152,14 @@
 
 }
 
+@media (max-width: 800px) {
+    .me1-container{
+        top: -150px;
+    }
+
+
+
+}
 @media (max-width: 500px) {
     .me-container{
         height: auto;
@@ -201,4 +209,19 @@
         justify-content: center;
         align-items: center;
     }
+}
+
+@media (max-height: 730px) {
+    .me2-grid1-container span {
+        font-size: 25px;
+    }
+
+}
+
+
+@media (max-height: 700px) {
+    .me2-grid1-container span {
+        font-size: 23px;
+    }
+
 }

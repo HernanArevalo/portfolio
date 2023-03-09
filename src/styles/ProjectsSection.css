@@ -1,7 +1,10 @@
 .projects-container{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 a{
     text-decoration: none;
@@ -25,7 +28,8 @@ a{
     flex-direction: column;
     justify-content: space-around;
     height: calc(100vh - 300px);
-    
+    gap: 40px;
+
 }
 
 .grid-projects{
@@ -44,30 +48,19 @@ a{
 
 .github-repository{
     align-items: flex-end;
-    
+    display: flex;
+    text-align: end;
 }
 
 .github-repository a{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 10px;
     color: rgb(238, 117, 74);
 }
 
-@media (max-height: 810px) {
-    .project2-container{
-        height: calc(100% - 215px);
-        justify-content: center;
-        gap: 10%;
 
-    }
-    .grid-projects.large{
-        height: 42%;
-    }
-
-
-}
 
 @media (max-width: 500px) {
     .projects-container{
@@ -80,7 +73,7 @@ a{
     .project1-container > div{
         height: auto;
     }
-        .project2-container{
+    .project2-container{
         height: auto;
         margin-top: 40px;
     }
@@ -114,3 +107,19 @@ a{
 
 
 }
+
+@media (max-height: 830px) {
+    .project2-container{
+        gap: 40px;
+        height: auto;
+    }
+    
+}
+
+@media (max-height: 800px) {
+    .project2-container{
+        gap: 20px;
+    }
+    
+}
+

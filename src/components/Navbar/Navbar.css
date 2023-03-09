@@ -7,7 +7,7 @@
     left: -112px;
     top: 0;
     margin: 0;
-    z-index: 999;
+    z-index: 9999999;
 }
   
   .navbar nav{
