@@ -4,12 +4,12 @@
       "image_file": "reactjs.svg"
     },
     {
-      "name": "React Redux",
-      "image_file": "redux.svg"
+      "name": "Next.js",
+      "image_file": "next.svg"
     },
     {
-      "name": "React Router",
-      "image_file": "router.svg"
+      "name": "React Redux",
+      "image_file": "redux.svg"
     },
     { 
       "name": "Javascript",

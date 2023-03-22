@@ -1,14 +1,15 @@
+import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+
 import { MeSection, ProjectsSection, SkillsSection, ContactSection } from '../sections'
 import { Navbar, Likes, Language } from '../components'
+import { en, es } from '../data/info.json'
 
 import '../App.css'
 import '../styles/MeSection.css'
 import '../styles/ProjectsSection.css'
 import '../styles/SkillsSection.css'
 import '../styles/ContactSection.css'
-import { en, es } from '../data/info.json'
-import { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 
 export const HomePage = () => {
 

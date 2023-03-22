@@ -20,7 +20,7 @@ export const Language = () => {
 
   return (
     <>
-      <div className='lang-container'>
+      <div className='lang-container  animate__animated animate__fadeIn animate__delay-2s'>
         <div className='lang'>
           <div className='lang-es active' onClick={ activeSpanish }>
             ES

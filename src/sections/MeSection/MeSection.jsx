@@ -7,11 +7,11 @@ export const MeSection = ({info}) => {
 
   return (
     <div className="me-container" id="me">
-          <div className="section-title">
+          <div className="section-title animate__animated animate__fadeInLeft">
             { info.me.title }
           </div>
           <div className="me1-container">
-            <div className="me1-grid1-container">
+            <div className="me1-grid1-container animate__animated animate__fadeInLeft">
               <h2>Hernán Arévalo</h2>
               <h3>{ info.me.charge }</h3>
             </div>

@@ -2,8 +2,11 @@ import React from 'react'
 import './Navbar.css'
 
 export const Navbar = () => {
+
+    console.log(window.innerWidth);
+
   return (
-    <div className='navbar'>
+    <div className={`navbar animate__animated ${window.innerWidth > 500?'animate__fadeInLeft':'animate__fadeInDown'}`}>
     <nav>
         <ul className="navbar-list">
             <li className="navbar-item">
