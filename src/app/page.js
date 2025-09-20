@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import Navbar from "./components/header/Header";
 import CustomCursor from "../app/components/shared/custom-cursor/custom-cursor";
 import Hero from "../app/components/home/hero/Hero";
@@ -7,11 +8,15 @@ import Projects from "./components/home/projects/Projects";
 import About from "./components/home/about/About";
 import Skills from "./components/home/skills/Skills";
 import Services from "./components/home/services/Services";
-import Testimonial from "./components/home/testimonial/Testimonial";
+import Learning from "./components/home/learning/Learning";
 import Footer from "./components/footer/Footer";
+import Intro from "./components/intro/Intro";
+
 export default function Home() {
+
   return (
     <div className="overflow-x-hidden">
+      <Intro />
       <CustomCursor />
       <Navbar />
       <Hero />
@@ -23,7 +28,7 @@ export default function Home() {
         <Skills />
       </div>
       <Services />
-      <Testimonial />
+      <Learning />
       <Footer />
     </div>
   );
