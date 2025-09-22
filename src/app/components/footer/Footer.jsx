@@ -5,7 +5,7 @@ import Wrapper from '../shared/wrapper/Wrapper';
 import map from '../../asset/svg/map.svg';
 import phone from '../../asset/svg/phone-email.svg';
 import { IoCheckmark } from 'react-icons/io5';
-import { email } from '@/constants/socials';
+import { email } from '@/app/constants/socials';
 
 const Footer = () => {
     const [formData, setFormData] = useState({
