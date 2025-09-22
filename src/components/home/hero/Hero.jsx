@@ -149,7 +149,7 @@ const Hero = () => {
               >
                 See my Work
               </button>
-              <a href={curriculumURL}>
+              <a href={curriculumURL} target="_blank">
                 <button className="text-secondary-text text-lg lg:text-xl font-semibold hover:text-primary-white ease-in-out duration-300 transition-all">
                   Download CV
                 </button>
