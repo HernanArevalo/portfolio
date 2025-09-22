@@ -125,7 +125,7 @@ const Navbar = () => {
 
           <div className="hidden lg:block">
             <nav className={`space-x-6 flex justify-between gap-x-5 ${isOpen ? "text-black" : "text-white"}`}>
-              {["Home", "Portfolio", "About", "Testimonial", "Contact"].map((text, index) => (
+              {["Home", "Portfolio", "About", "Learning", "Contact"].map((text, index) => (
                 <motion.div
                   key={text}
                   initial="hidden"
@@ -171,7 +171,7 @@ const Navbar = () => {
         className="lg:hidden fixed top-20 left-0 w-full h-full bg-primary-gray z-30 flex items-center justify-center"
       >
         <nav className="space-y-8 text-left text-black px-3 pt-6">
-          {["Home", "Portfolio", "About", "Resume", "Testimonial", "Contact"].map((text, index) => (
+          {["Home", "Portfolio", "About", "Resume", "Learning", "Contact"].map((text, index) => (
             <motion.div
               key={text}
               initial="hidden"
