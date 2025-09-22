@@ -2,16 +2,37 @@ import React from 'react';
 import Wrapper from '../../shared/wrapper/Wrapper';
 import Heading from '../../shared/heading/Heading';
 import { IoCodeSlash } from "react-icons/io5";
-import { PiPenNib, PiShapes } from "react-icons/pi";
-import { BsLayers } from "react-icons/bs";
+import { PiLightbulb, PiShapes } from "react-icons/pi";
+import { BsDatabaseGear } from "react-icons/bs";
 
 const Services = () => {
-    const services = [
-        { icon: <IoCodeSlash />, title: 'Frontend Development', description: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, tempora provident? Consequatur ipsam exercitationem delectus.' },
-        { icon: <PiShapes />, title: 'UI/UX Design', description: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, tempora provident? Consequatur ipsam exercitationem delectus.' },
-        { icon: <PiPenNib />, title: 'Graphic Design', description: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, tempora provident? Consequatur ipsam exercitationem delectus.' },
-        { icon: <BsLayers />, title: 'Social Media Post Design', description: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, tempora provident? Consequatur ipsam exercitationem delectus.' },
-    ];
+const services = [
+  {
+    icon: <IoCodeSlash />,
+    title: 'Frontend Development',
+    description:
+      'Building responsive and dynamic interfaces with React, Next.js, and Angular, always focusing on performance and great user experience.',
+  },
+  {
+    icon: <BsDatabaseGear />,
+    title: 'Backend Development',
+    description:
+      'Designing and implementing scalable APIs with Node.js, PostgreSQL, and Sequelize, ensuring efficiency and reliability.',
+  },
+  {
+    icon: <PiShapes />,
+    title: 'UI/UX Design',
+    description:
+      'Creating clean, intuitive, and visually appealing interfaces where usability and aesthetics work together seamlessly.',
+  },
+  {
+    icon: <PiLightbulb />,
+    title: 'Creative Solutions',
+    description:
+      'From 3D printing projects to automation bots, I enjoy solving real-world problems through innovation and technology.',
+  },
+];
+
 
     const ServiceCard = ({ icon, title, description }) => {
         return (
