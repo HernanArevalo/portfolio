@@ -38,7 +38,7 @@ const Projects = () => {
             name: "Smash App",
             image: smashAppImg,
             link: "",
-            githubLink: "https://github.com/HernanArevalo/Team-5-XAcadamy"
+            githubLink: "https://github.com/HernanArevalo/XAcadamy"
         },
         {
             name: "Espacio Blank",
@@ -73,8 +73,8 @@ const Projects = () => {
         {
             name: "Twitter Bot - 300k followers",
             image: twitterBotImg,
-            link: "https://shop.hernanarevalo.com.ar",
-            githubLink: "https://github.com/HernanArevalo/teslo-shop"
+            link: "https://x.com/FrasesDeNTVG1",
+            githubLink: "https://github.com/HernanArevalo/twitter-lyrics-bot"
         },
         {
             name: "Valo Wiki",
