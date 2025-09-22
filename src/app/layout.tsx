@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "Hernán Arévalo | FullStack Developer",
     description:
       "Portfolio of Hernán Arévalo, FullStack Developer specialized in Next.js, Angular, and modern frontend and backend projects.",
-    url: "https://your-domain.com",
+    url: "https://hernanarevalo.com.ar/",
     siteName: "Hernán Arévalo Portfolio",
     locale: "en_US",
     type: "website",
