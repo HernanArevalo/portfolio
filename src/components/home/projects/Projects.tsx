@@ -20,6 +20,7 @@ import calendarImg from "/public/projects/calendar.png";
 import landing1Img from "/public/projects/landing1.png";
 import landing2Img from "/public/projects/landing2.png";
 import smashAppImg from "/public/projects/smash-app.png";
+import oldPortfolioImg from "/public/projects/hernan-arevalo.png";
 
 
 interface project {
@@ -56,6 +57,12 @@ const Projects = () => {
             image: moviesImg,
             link: "https://movies.hernanarevalo.com.ar",
             githubLink: "https://github.com/HernanArevalo/movies-app"
+        },
+        {
+            name: "Old Portfolio",
+            image: oldPortfolioImg,
+            link: "https://old.hernanarevalo.com.ar",
+            githubLink: "https://github.com/HernanArevalo/HernanArevalo"
         },
         {
             name: "ToDo App",
