@@ -38,4 +38,4 @@ next-env.d.ts
 .vercel
 
 # mockups ps files
-src/app/asset/projects/mockups
+/public/projects/mockups

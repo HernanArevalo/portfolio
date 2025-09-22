@@ -4,9 +4,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import { IoIosArrowRoundForward, IoIosArrowRoundBack } from 'react-icons/io';
 import Image from 'next/image';
-import user from '../../../asset/user.png';
+import user from '/public/user.png';
 import { TiStarFullOutline } from 'react-icons/ti';
-import { PiQuotes } from 'react-icons/pi';
 
 function SampleNextArrow(props) {
   const { onClick } = props;

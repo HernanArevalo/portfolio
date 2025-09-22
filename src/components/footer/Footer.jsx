@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
-import Wrapper from '../shared/wrapper/Wrapper';
-import map from '../../asset/svg/map.svg';
-import phone from '../../asset/svg/phone-email.svg';
+import Wrapper from '@/components/shared/wrapper/Wrapper';
+
+import map from '/public/svg/map.svg';
+import phone from '/public/svg/phone-email.svg';
 import { IoCheckmark } from 'react-icons/io5';
-import { email } from '@/app/constants/socials';
+import { email } from '@/constants/socials';
 
 const Footer = () => {
     const [formData, setFormData] = useState({

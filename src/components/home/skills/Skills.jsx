@@ -1,18 +1,18 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import html from "../../../asset/logos/html.png";
-import css from "../../../asset/logos/css.png";
-import javascript from "../../../asset/logos/javascript.png";
-import react from "../../../asset/logos/react.png";
-import nextjs from "../../../asset/logos/nextjs.webp";
-import tailwind from "../../../asset/logos/tailwind.png";
-import firebase from "../../../asset/logos/firebase.png";
-import figma from "../../../asset/logos/figma.png";
-import photoshop from "../../../asset/logos/photoshop.png";
-import illustrator from "../../../asset/logos/illustrator.png";
-import redux from "../../../asset/logos/redux.png";
-import typescript from "../../../asset/logos/typescript.png";
+import html from "/public/logos/html.png";
+import css from "/public/logos/css.png";
+import javascript from "/public/logos/javascript.png";
+import react from "/public/logos/react.png";
+import nextjs from "/public/logos/nextjs.webp";
+import tailwind from "/public/logos/tailwind.png";
+import firebase from "/public/logos/firebase.png";
+import figma from "/public/logos/figma.png";
+import photoshop from "/public/logos/photoshop.png";
+import illustrator from "/public/logos/illustrator.png";
+import redux from "/public/logos/redux.png";
+import typescript from "/public/logos/typescript.png";
 import Image from "next/image";
 import Wrapper from "../../shared/wrapper/Wrapper";
 
@@ -31,7 +31,7 @@ const containerVariants = {
     visible: {
         opacity: 1,
         transition: {
-            staggerChildren: 0.1, // stagger the appearance of child elements
+            staggerChildren: 0.1,
             delayChildren: 0.2,
         },
     },

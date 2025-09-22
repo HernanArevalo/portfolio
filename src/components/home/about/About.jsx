@@ -1,11 +1,11 @@
-import React from 'react';
+
 import Wrapper from '../../shared/wrapper/Wrapper';
 import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
-import user from '@/app/asset/profile2.jpg';
-import { email } from '@/app/constants/socials';
-import { myResume } from '@/app/constants/about';
-import Heading from '../../shared/heading/Heading';
+import user from '/public/profile2.jpg';
+import { email } from '@/constants/socials';
+import { myResume } from '@/constants/about';
+import Heading from '@/components/shared/heading/Heading';
 
 const About = () => {
   const imageVariants = {

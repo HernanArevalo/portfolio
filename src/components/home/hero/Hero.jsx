@@ -1,5 +1,5 @@
-import Wrapper from '@/app/components/shared/wrapper/Wrapper';
-import user from '@/app/asset/profile.png';
+import Wrapper from '@/components/shared/wrapper/Wrapper';
+import user from '/public/profile.png';
 
 import Image from 'next/image';
 import { TiSocialLinkedin } from 'react-icons/ti';
@@ -7,7 +7,7 @@ import { TbBrandGithubFilled } from 'react-icons/tb';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
-import { curriculumURL, githubURL, instagramURL, linkedinURL, whatsappURL } from '@/app/constants/socials';
+import { curriculumURL, githubURL, instagramURL, linkedinURL, whatsappURL } from '@/constants/socials';
 
 const Hero = () => {
   const router = useRouter();
