@@ -5,6 +5,7 @@ import Wrapper from '../shared/wrapper/Wrapper';
 import map from '../../asset/svg/map.svg';
 import phone from '../../asset/svg/phone-email.svg';
 import { IoCheckmark } from 'react-icons/io5';
+import { email } from '@/constants/socials';
 
 const Footer = () => {
     const [formData, setFormData] = useState({
@@ -78,14 +79,11 @@ const Footer = () => {
         return valid;
     };
 
-    // Handle form submission
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Validate form before submission
         if (validateForm()) {
-            // Replace this with your Formspree endpoint
-            const formspreeEndpoint = 'https://formspree.io/YOUR_ENDPOINT';
+            const formspreeEndpoint = 'https://formspree.io/f/xovngane';
 
             try {
                 const response = await fetch(formspreeEndpoint, {
@@ -141,27 +139,27 @@ const Footer = () => {
                             <h2 className="text-[32px] xl:text-6xl font-bold mt-6 md:mt-0 xl:mt-0">let’s do something awesome</h2>
                             <ul>
                                 <li className="flex items-start gap-x-5 mt-10 xl:mt-20">
-                                    <Image src={map} alt=" " width={1080} height={1080} className="w-[30px] mt-1 object-contain" />
+                                    <Image src={map} alt="map logo" width={1080} height={1080} className="w-[30px] mt-1 object-contain" />
                                     <div>
                                         <h3 className="text-2xl font-semibold">Address</h3>
-                                        <p className="text-lg text-primary-white/80">Karachi, Pakistan.</p>
+                                        <p className="text-lg text-primary-white/80">Córdoba, Argentina.</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-x-5 mt-10 lg:mt-14">
-                                    <Image src={phone} alt=" " width={1080} height={1080} className="w-[30px] mt-1 object-contain" />
+                                    <Image src={phone} alt="phone logo" width={1080} height={1080} className="w-[30px] mt-1 object-contain" />
                                     <div>
                                         <h3 className="text-2xl xl:text-2xl font-semibold">Phone & Email</h3>
                                         <p className="text-lg text-primary-white/80">
-                                            <a href="tel:(+92)1234567" className="hover:text-gray-300 transition">(+92) 123-2456789</a>
+                                            <a href="tel:(+92)1234567" className="hover:text-gray-300 transition">(+54) 351 6148912</a>
                                             <br />
-                                            <a href="mailto:user123@gmail.com" className="hover:text-gray-300 transition">user123@gmail.com</a>
+                                            <a href="mailto:user123@gmail.com" className="hover:text-gray-300 transition">{email}</a>
                                         </p>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                         <div className="text-primary-green text-sm xl:text-xl mb-5 xl:mb-0 mt-10 xl:mt-64">
-                            Copyright © 2024 User. All rights reserved.
+                            Copyright © 2025 HernánArévalo. All rights reserved.
                         </div>
                     </motion.div>
                     <motion.div
