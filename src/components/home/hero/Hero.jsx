@@ -49,11 +49,13 @@ const Hero = () => {
   };
 
   const imageVariants = {
-    hidden: { opacity: 0, scale: 0.9 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: { duration: 1.2, ease: 'easeOut' },
+    hover: {
+      scale: 1.1,
+      rotate: 2,
+      transition: {
+        duration: 0.5,
+        ease: [0.6, 0.01, -0.05, 0.95],
+      },
     },
   };
 
