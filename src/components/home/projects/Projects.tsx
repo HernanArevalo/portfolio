@@ -8,19 +8,21 @@ import { Wrapper } from "../../shared/wrapper";
 
 
 // images
-import twitterBotImg from "/public/projects/twitter-bot.png";
-import moviesImg from "/public/projects/movies.png";
-import espacioBlank from "/public/projects/espacio-blank.png";
-import spaceImg from "/public/projects/space-tourism.png";
-import todoImg from "/public/projects/to-do.png";
-import tesloShopImg from "/public/projects/teslo-shop.png";
-import journalImg from "/public/projects/journal-app.png";
-import valoImg from "/public/projects/valorant.png";
-import calendarImg from "/public/projects/calendar.png";
-import landing1Img from "/public/projects/landing1.png";
-import landing2Img from "/public/projects/landing2.png";
-import smashAppImg from "/public/projects/smash-app.png";
-import oldPortfolioImg from "/public/projects/hernan-arevalo.png";
+import {
+twitterBotImg,
+moviesImg,
+espacioBlank,
+spaceImg,
+todoImg,
+tesloShopImg,
+journalImg,
+valoImg,
+calendarImg,
+landing1Img,
+landing2Img,
+smashAppImg,
+oldPortfolioImg
+} from "@/../public/projects";
 
 
 interface project {
@@ -154,38 +156,38 @@ const Projects = () => {
                     <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 mt-6 md:mt-10 md:gap-x-20 lg:gap-x-20 gap-y-10 lg:gap-y-16 w-full">
                         {visibleCards.map((e, index) => (
 
-                                <motion.div
-                                    key={index}
-                                    className={`w-full h-[400px]  md:max-h-[400px] rounded-2xl cursor-pointer relative overflow-hidden group ${index % 2 === 1 ? "xl:-mt-[10rem]" : ""
-                                        }`}
-                                    variants={textVariants}
-                                    initial="hidden"
-                                    animate={isH1InView ? "visible" : "hidden"}
-                                >
-                                    <div className="absolute top-50 left-0 w-full h-[30%] bg-gradient-to-b from-black/80 via-black/40 to-transparent flex items-start justify-start p-5">
-                                        <h2 className="text-white text-xl font-semibold">{e.name}</h2>
-                                    </div>
-                                    <Image
-                                        src={e.image}
-                                        alt={e.name}
-                                        width={1080}
-                                        height={1080}
-                                        className="w-full h-full object-cover rounded-2xl group-hover:scale-110 ease-in-out duration-500 transition-all"
-                                    />
-                                    <div className="flex items-center bg-gradient-to-t h-[50%] from-black via-black/50 to-transparent justify-center w-full gap-5 translate-y-56 group-hover:-translate-y-40 ease-linear transition-all duration-300">
-                                        {e.githubLink !== "" &&
-                                            <button onClick={() => window.open(e.githubLink, '_blank')} className="bg-primary-gray border border-primary-white/20  text-white hover:scale-110 ease-in-out duration-150 transition-all  rounded-xl w-14 h-14 flex justify-center items-center">
-                                                <FaGithub size={25} />
-                                            </button>
-                                        }
-                                        {e.link !== "" &&
-                                            <button onClick={() => window.open(e.link, '_blank')} className="bg-primary-gray text-white  border border-primary-white/20 hover:scale-110 ease-in-out duration-150 transition-all  rounded-xl w-14 h-14  flex justify-center items-center">
-                                                <FiLink size={25} />
-                                            </button>
-                                        }
+                            <motion.div
+                                key={index}
+                                className={`w-full h-[400px]  md:max-h-[400px] rounded-2xl cursor-pointer relative overflow-hidden group ${index % 2 === 1 ? "xl:-mt-[10rem]" : ""
+                                    }`}
+                                variants={textVariants}
+                                initial="hidden"
+                                animate={isH1InView ? "visible" : "hidden"}
+                            >
+                                <div className="absolute top-50 left-0 w-full h-[30%] bg-gradient-to-b from-black/80 via-black/40 to-transparent flex items-start justify-start p-5">
+                                    <h2 className="text-white text-xl font-semibold">{e.name}</h2>
+                                </div>
+                                <Image
+                                    src={e.image}
+                                    alt={e.name}
+                                    width={1080}
+                                    height={1080}
+                                    className="w-full h-full object-cover rounded-2xl group-hover:scale-110 ease-in-out duration-500 transition-all"
+                                />
+                                <div className="flex items-center bg-gradient-to-t h-[50%] from-black via-black/50 to-transparent justify-center w-full gap-5 translate-y-56 group-hover:-translate-y-40 ease-linear transition-all duration-300">
+                                    {e.githubLink !== "" &&
+                                        <button onClick={() => window.open(e.githubLink, '_blank')} className="bg-primary-gray border border-primary-white/20  text-white hover:scale-110 ease-in-out duration-150 transition-all  rounded-xl w-14 h-14 flex justify-center items-center">
+                                            <FaGithub size={25} />
+                                        </button>
+                                    }
+                                    {e.link !== "" &&
+                                        <button onClick={() => window.open(e.link, '_blank')} className="bg-primary-gray text-white  border border-primary-white/20 hover:scale-110 ease-in-out duration-150 transition-all  rounded-xl w-14 h-14  flex justify-center items-center">
+                                            <FiLink size={25} />
+                                        </button>
+                                    }
 
-                                    </div>
-                                </motion.div>
+                                </div>
+                            </motion.div>
                         ))}
 
                         {/* Empty div for the first column to create space */}
