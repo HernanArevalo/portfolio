@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Hernán Arévalo | FullStack Developer",
     description:
-      "Portfolio of Hernán Arévalo, FullStack Developer specialized in Next.js, Angular, and modern frontend and backend projects.",
+      "Portfolio of Hernán Arévalo, FullStack Developer specialized in Next.js, React, Angular, and modern frontend and backend projects.",
     url: "https://hernanarevalo.com.ar/",
     siteName: "Hernán Arévalo Portfolio",
     locale: "en_US",
