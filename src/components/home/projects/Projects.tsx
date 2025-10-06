@@ -103,13 +103,13 @@ const Projects = () => {
             githubLink: "https://github.com/HernanArevalo/calendar-app"
         },
         {
-            name: "Landing 1",
+            name: "Landing",
             image: landing1Img,
             link: "https://hernanarevalo.github.io/landing-1/",
             githubLink: "https://github.com/HernanArevalo/landing-1"
         },
         {
-            name: "Landing 2",
+            name: "Landing",
             image: landing2Img,
             link: "https://hernanarevalo.github.io/landing-2",
             githubLink: "https://github.com/HernanArevalo/landing-2"
@@ -164,9 +164,11 @@ const Projects = () => {
                                 initial="hidden"
                                 animate={isH1InView ? "visible" : "hidden"}
                             >
-                                <div className="absolute top-50 left-0 w-full h-[30%] bg-gradient-to-b from-black/80 via-black/40 to-transparent flex items-start justify-start p-5">
+
+                                <div className="absolute top-50 left-0 w-full h-[30%] bg-gradient-to-b from-black/80 via-black/40 to-transparent flex items-start justify-start p-5 z-50">
                                     <h2 className="text-white text-xl font-semibold">{e.name}</h2>
                                 </div>
+
                                 <Image
                                     src={e.image}
                                     alt={e.name}
@@ -174,7 +176,9 @@ const Projects = () => {
                                     height={1080}
                                     className="w-full h-full object-cover rounded-2xl group-hover:scale-110 ease-in-out duration-500 transition-all"
                                 />
-                                <div className="flex items-center bg-gradient-to-t h-[50%] from-black via-black/50 to-transparent justify-center w-full gap-5 translate-y-56 group-hover:-translate-y-40 ease-linear transition-all duration-300">
+
+                                <div className="flex items-center bg-gradient-to-t h-[50%] from-black via-black/50 to-transparent 
+                                                justify-center w-full gap-5 translate-y-56 group-hover:-translate-y-40 ease-linear transition-all duration-300">
                                     {e.githubLink !== "" &&
                                         <button onClick={() => window.open(e.githubLink, '_blank')} className="bg-primary-gray border border-primary-white/20  text-white hover:scale-110 ease-in-out duration-150 transition-all  rounded-xl w-14 h-14 flex justify-center items-center">
                                             <FaGithub size={25} />
