@@ -7,7 +7,13 @@ import { TbBrandGithubFilled } from 'react-icons/tb';
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
-import { curriculumURL, githubURL, instagramURL, linkedinURL, whatsappURL } from '@/constants/socials';
+import {
+  curriculumURL,
+  githubURL,
+  instagramURL,
+  linkedinURL,
+  whatsappURL,
+} from '@/constants/socials';
 
 const Hero = () => {
   const router = useRouter();
@@ -159,8 +165,10 @@ const Hero = () => {
             </motion.div>
           </motion.div>
           <motion.div
-            variants={imageVariants}
-            className="w-full lg:w-[40%] mt-5 transition-transform duration-300 border-primary-white/30 border-4 rounded-3xl overflow-hidden"
+            initial="hidden"
+            animate="visible"
+            variants={svgVariants}
+            className="hidden-element w-full lg:w-[40%] mt-5 transition-transform duration-300 border-primary-white/30 border-4 rounded-3xl overflow-hidden"
           >
             <Image
               src={user}
@@ -182,7 +190,7 @@ const Hero = () => {
           {socialIcon.map((e, index) => (
             <a
               href={e.link}
-              target='_blank'
+              target="_blank"
               key={index}
               className="bg-secondary-text/10 cursor-pointer hover:bg-primary-white/30 ease-linear duration-200 transition-all rounded-lg text-secondary-text flex flex-col justify-center items-center p-3"
             >
