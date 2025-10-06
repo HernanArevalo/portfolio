@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
-import Wrapper from '@/components/shared/wrapper/Wrapper';
+import { Wrapper } from '@/components/shared/wrapper';
 
 import map from '/public/svg/map.svg';
 import phone from '/public/svg/phone-email.svg';

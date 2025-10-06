@@ -1,4 +1,4 @@
-import Wrapper from '@/components/shared/wrapper/Wrapper';
+import { Wrapper } from '@/components/shared/wrapper';
 import user from '/public/profile.png';
 
 import Image from 'next/image';

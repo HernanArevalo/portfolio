@@ -1,5 +1,5 @@
 import React from 'react';
-import Wrapper from '../../shared/wrapper/Wrapper';
+import { Wrapper } from '../../shared/wrapper';
 import Heading from '../../shared/heading/Heading';
 import { IoCodeSlash } from "react-icons/io5";
 import { PiLightbulb, PiShapes } from "react-icons/pi";

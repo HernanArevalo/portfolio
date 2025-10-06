@@ -1,5 +1,5 @@
 
-import Wrapper from '../../shared/wrapper/Wrapper';
+import { Wrapper } from '../../shared/wrapper';
 import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
 import user from '/public/profile2.jpg';

@@ -1,6 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+
 import html from "/public/logos/html.png";
 import css from "/public/logos/css.png";
 import javascript from "/public/logos/javascript.png";
@@ -18,7 +19,7 @@ import postgresql from "/public/logos/postgresql.png";
 
 
 import Image from "next/image";
-import Wrapper from "../../shared/wrapper/Wrapper";
+import { Wrapper } from "../../shared/wrapper";
 
 const skillVariants = {
     hidden: { opacity: 0, scale: 0.8 },

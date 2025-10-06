@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { motion, useInView } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { FiLink } from "react-icons/fi";
-import Wrapper from "../../shared/wrapper/Wrapper";
+import { Wrapper } from "../../shared/wrapper";
 
 
 // images

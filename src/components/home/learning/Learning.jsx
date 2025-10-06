@@ -1,5 +1,5 @@
 import React from 'react'
-import Wrapper from '../../shared/wrapper/Wrapper'
+import { Wrapper } from '../../shared/wrapper'
 import Heading from '../../shared/heading/Heading'
 import Cards from "./Cards"
 const Learning = () => {
