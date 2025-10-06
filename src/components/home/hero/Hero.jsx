@@ -182,6 +182,7 @@ const Hero = () => {
           {socialIcon.map((e, index) => (
             <a
               href={e.link}
+              target='_blank'
               key={index}
               className="bg-secondary-text/10 cursor-pointer hover:bg-primary-white/30 ease-linear duration-200 transition-all rounded-lg text-secondary-text flex flex-col justify-center items-center p-3"
             >

@@ -3,7 +3,7 @@ import { Wrapper } from '../../shared/wrapper';
 import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
 import user from '/public/profile2.jpg';
-import { email } from '@/constants/socials';
+import { email, phone, whatsappURL } from '@/constants/socials';
 import { myResume } from '@/constants/about';
 import Heading from '@/components/shared/heading/Heading';
 
@@ -113,10 +113,11 @@ const About = () => {
                 >
                   <p>Phone:</p>
                   <a
-                    href="tel:(+54)351 6148912"
+                    href={whatsappURL}
+                    target='_blank'
                     className="hover:text-primary-green ease-linear duration-200 transition-all"
                   >
-                    +54 351 6148912
+                    {phone}
                   </a>
                 </motion.div>
                 <motion.div

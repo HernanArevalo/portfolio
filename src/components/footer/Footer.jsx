@@ -6,7 +6,7 @@ import { Wrapper } from '@/components/shared/wrapper';
 import map from '/public/svg/map.svg';
 import phone from '/public/svg/phone-email.svg';
 import { IoCheckmark } from 'react-icons/io5';
-import { email } from '@/constants/socials';
+import { email, whatsappURL } from '@/constants/socials';
 
 const Footer = () => {
     const [formData, setFormData] = useState({
@@ -151,7 +151,7 @@ const Footer = () => {
                                     <div>
                                         <h3 className="text-2xl xl:text-2xl font-semibold">Phone & Email</h3>
                                         <p className="text-lg text-primary-white/80">
-                                            <a href="tel:(+92)1234567" className="hover:text-gray-300 transition">(+54) 351 6148912</a>
+                                            <a href={whatsappURL} target='_blank' className="hover:text-gray-300 transition">(+54) 351 6148912</a>
                                             <br />
                                             <a href="mailto:user123@gmail.com" className="hover:text-gray-300 transition">{email}</a>
                                         </p>
