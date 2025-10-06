@@ -2,20 +2,23 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
-import html from "/public/logos/html.png";
-import css from "/public/logos/css.png";
-import javascript from "/public/logos/javascript.png";
-import react from "/public/logos/react.png";
-import nextjs from "/public/logos/nextjs.webp";
-import tailwind from "/public/logos/tailwind.png";
-import firebase from "/public/logos/firebase.png";
-import figma from "/public/logos/figma.png";
-import photoshop from "/public/logos/photoshop.png";
-import illustrator from "/public/logos/illustrator.png";
-import redux from "/public/logos/redux.png";
-import typescript from "/public/logos/typescript.png";
-import angular from "/public/logos/angular.png";
-import postgresql from "/public/logos/postgresql.png";
+import { 
+  javascript,
+  react,
+  nextjs,
+  tailwind,
+  firebase,
+  photoshop,
+  illustrator,
+  redux,
+  typescript,
+  angular,
+  postgresql,
+  nodejs,
+  python,
+  sql,
+} from "@/../public/logos";
+
 
 
 import Image from "next/image";
@@ -55,19 +58,20 @@ const Skills = () => {
     }, [controls, inView]);
 
     const skillsData = [
-        { id: 1, icon: html, name: "HTML" },
-        { id: 2, icon: css, name: "CSS" },
-        { id: 3, icon: javascript, name: "JavaScript" },
-        { id: 4, icon: typescript, name: "TypeScript" },
-        { id: 5, icon: react, name: "React" },
-        { id: 6, icon: nextjs, name: "Next.js" },
-        { id: 6, icon: angular, name: "Angular" },
-        { id: 7, icon: redux, name: "Redux" },
-        { id: 7, icon: postgresql, name: "PostgreSQL" },
-        { id: 8, icon: tailwind, name: "TailwindCSS" },
-        { id: 9, icon: firebase, name: "Firebase" },
-        { id: 11, icon: photoshop, name: "Photoshop" },
-        { id: 12, icon: illustrator, name: "Illustrator" },
+        { icon: javascript, name: "JavaScript" },
+        { icon: typescript, name: "TypeScript" },
+        { icon: react, name: "React" },
+        { icon: nextjs, name: "Next.js" },
+        { icon: angular, name: "Angular" },
+        { icon: redux, name: "Redux" },
+        { icon: nodejs, name: "NodeJS" },
+        { icon: postgresql, name: "PostgreSQL" },
+        { icon: python, name: "Python" },
+        { icon: tailwind, name: "TailwindCSS" },
+        { icon: firebase, name: "Firebase" },
+        { icon: sql, name: "SQL" },
+        { icon: photoshop, name: "Photoshop" },
+        { icon: illustrator, name: "Illustrator" },
     ];
 
     return (
@@ -80,9 +84,9 @@ const Skills = () => {
             // initial="hidden"
             // animate={controls}
             >
-                {skillsData.map((skill) => (
+                {skillsData.map((skill, idx) => (
                     <motion.div
-                        key={skill.id}
+                        key={idx}
                         className="flex flex-col xl:gap-2 justify-center items-center"
                         variants={skillVariants}
                         whileHover="hover"
