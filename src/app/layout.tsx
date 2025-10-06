@@ -14,7 +14,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Hernán Arévalo | FullStack Developer",
+  title: "Hernán Arévalo | FullStack Dev.",
   description:
     "Portfolio of Hernán Arévalo, FullStack Developer specialized in Next.js, Angular, and modern frontend and backend projects.",
 
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary",
-    title: "Hernán Arévalo | FullStack Developer",
+    title: "Hernán Arévalo | FullStack Dev",
     description:
       "Portfolio of Hernán Arévalo, FullStack Developer specialized in Next.js, Angular, and modern frontend and backend projects.",
   },
