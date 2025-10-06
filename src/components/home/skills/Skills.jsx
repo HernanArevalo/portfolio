@@ -13,6 +13,10 @@ import photoshop from "/public/logos/photoshop.png";
 import illustrator from "/public/logos/illustrator.png";
 import redux from "/public/logos/redux.png";
 import typescript from "/public/logos/typescript.png";
+import angular from "/public/logos/angular.png";
+import postgresql from "/public/logos/postgresql.png";
+
+
 import Image from "next/image";
 import Wrapper from "../../shared/wrapper/Wrapper";
 
@@ -56,10 +60,11 @@ const Skills = () => {
         { id: 4, icon: typescript, name: "TypeScript" },
         { id: 5, icon: react, name: "React" },
         { id: 6, icon: nextjs, name: "Next.js" },
+        { id: 6, icon: angular, name: "Angular" },
         { id: 7, icon: redux, name: "Redux" },
+        { id: 7, icon: postgresql, name: "PostgreSQL" },
         { id: 8, icon: tailwind, name: "TailwindCSS" },
         { id: 9, icon: firebase, name: "Firebase" },
-        { id: 10, icon: figma, name: "Figma" },
         { id: 11, icon: photoshop, name: "Photoshop" },
         { id: 12, icon: illustrator, name: "Illustrator" },
     ];
