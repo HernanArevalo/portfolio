@@ -1,6 +1,6 @@
 import { Metadata, Viewport } from "next";
 import "./globals.css";
-import { Syne } from "next/font/google";
+import { Syne, Courier_Prime } from "next/font/google";
 
 const fontSyne = Syne({ subsets: ["latin"] });
 

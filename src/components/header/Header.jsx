@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import FlipLink from "./components/FlipLinks";
+import { Counter } from "../counter/Counter";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -101,7 +102,7 @@ const Navbar = () => {
   return (
     <>
       <motion.div
-        className={`flex flex-col justify-center items-center ease-linear w-full h-[80px] md:h-[80px] transition-all duration-300 fixed top-0 z-50 ${isOpen ? 'bg-primary-gray ' : ""}`}
+        className={`flex flex-col justify-center items-center ease-linear w-full h-[80px] md:h-[80px] transition-all duration-300 fixed top-0 z-50 gap-2 mt-2${isOpen ? 'bg-primary-gray ' : ""}`}
         animate={{ y: isScrollingUp ? 0 : -100 }}
         initial={{ y: 0 }}
         transition={{ duration: 0.3, ease: "easeInOut", }}
@@ -161,6 +162,8 @@ const Navbar = () => {
             </button>
           </motion.div>
         </div>
+        <Counter />
+
       </motion.div>
 
       {/* Mobile menu */}
@@ -186,7 +189,9 @@ const Navbar = () => {
             </motion.div>
           ))}
         </nav>
+      <Counter />
       </motion.div>
+
     </>
   );
 };
