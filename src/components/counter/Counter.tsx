@@ -16,12 +16,7 @@ export const Counter = () => {
     } else {
       setViews(0);
     }
-  }, []);
-
-  useEffect(() => {
-    console.log(views);
-  }, [views])
-  
+  }, []);  
 
   return (
     <>{ views &&

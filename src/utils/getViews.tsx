@@ -4,7 +4,6 @@ import { FirebaseDB } from '@/firebase/config';
 export const getViews = async () => {
   const docRef = doc(FirebaseDB, "views", "counter");
 
-  console.log("getting views");
   
   const docSnap = await getDoc(docRef);
   const { count } = docSnap.data();
@@ -15,8 +14,6 @@ export const getViews = async () => {
 
 export const updateViews = async () => {
   const docRef = doc(FirebaseDB, "views", "counter");
-
-  console.log("update views");
 
   await updateDoc(docRef, {
     count: increment(1)
