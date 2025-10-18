@@ -7,7 +7,7 @@ import { getFirestore } from 'firebase/firestore/lite'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_APIKEY,
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_APIKEY,
   authDomain: "portfolio-1fe7f.firebaseapp.com",
   projectId: "portfolio-1fe7f",
   storageBucket: "portfolio-1fe7f.appspot.com",
