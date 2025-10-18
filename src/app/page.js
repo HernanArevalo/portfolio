@@ -11,8 +11,14 @@ import Services from "@/components/home/services/Services";
 import Learning from "@/components/home/learning/Learning";
 import Footer from "@/components/footer/Footer";
 import Intro from "@/components/intro/Intro";
+import { useEffect } from "react";
+import { getViews, updateViews } from "@/utils/getViews";
 
 export default function Home() {
+  useEffect(() => {
+    updateViews();
+    getViews();
+  }, [])
 
   return (
     <div className="overflow-x-hidden">
