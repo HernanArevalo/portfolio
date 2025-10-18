@@ -54,7 +54,9 @@ const Hero = () => {
     },
   };
 
-  const imageVariants = {
+  const pictureVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
     hover: {
       scale: 1.1,
       rotate: 2,
@@ -164,12 +166,14 @@ const Hero = () => {
               </a>
             </motion.div>
           </motion.div>
+
           <motion.div
             initial="hidden"
             animate="visible"
-            variants={svgVariants}
+            variants={pictureVariants}
+            transition={{ delay: 2, duration: 0.5, ease: 'easeInOut' }}
             className="hidden-element w-full lg:w-[40%] mt-5 transition-transform duration-300 border-primary-white/30 border-4 rounded-3xl overflow-hidden"
-          >
+          > 
             <Image
               src={user}
               alt="profile photo"
@@ -192,7 +196,7 @@ const Hero = () => {
               href={e.link}
               target="_blank"
               key={index}
-              className="bg-secondary-text/10 cursor-pointer hover:bg-primary-white/30 ease-linear duration-200 transition-all rounded-lg text-secondary-text flex flex-col justify-center items-center p-3"
+              className="bg-secondary-text/10 cursor-pointer hover:bg-primary-white/30 hover:text-primary-green ease-linear duration-200 transition-all rounded-lg text-secondary-text flex flex-col justify-center items-center p-3"
             >
               <span>{e.icon}</span>
             </a>
