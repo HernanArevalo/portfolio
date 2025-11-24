@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import FlipLink from "./components/FlipLinks";
-import { Counter } from "../counter/Counter";
+import { ViewsCounter } from "../views-counter/ViewsCounter";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -162,7 +162,7 @@ const Navbar = () => {
             </button>
           </motion.div>
         </div>
-        <Counter />
+        <ViewsCounter />
 
       </motion.div>
 
@@ -189,7 +189,7 @@ const Navbar = () => {
             </motion.div>
           ))}
         </nav>
-      <Counter />
+      <ViewsCounter />
       </motion.div>
 
     </>

@@ -5,7 +5,7 @@ import { getViews } from '@/utils/getViews';
 
 const fontCourier = Courier_Prime({ weight: ["400"], subsets: ["latin"] });
 
-export const Counter = () => {
+export const ViewsCounter = () => {
   const [views, setViews] = useState<number | null>(null);
 
   useEffect(() => {
@@ -18,14 +18,16 @@ export const Counter = () => {
     }
   }, []);  
 
-  return (
-    <>{ views &&
-    <div className='flex justify-end md:max-w-screen-lg xl:max-w-screen-xl items-center w-full mx-auto px-3'>
-      <div className="flex flex-row gap-1 px-1 justify-start items-center h-fit border-gray-600 text-gray-200 border-2 rounded-md w-fit">
-        <FaEye />
-        <div className={fontCourier.className}>{views ?? "..."}</div>
+  if (views && views !== 0) {
+    return (
+      <div className='flex justify-end md:max-w-screen-lg xl:max-w-screen-xl items-center w-full mx-auto px-3'>
+        <div className="flex flex-row gap-1 px-1 justify-start items-center h-fit border-gray-600 text-gray-200 border-2 rounded-md w-fit">
+          <FaEye />
+          <div className={fontCourier.className}>{views ?? "..."}</div>
+        </div>
       </div>
-    </div>}
-    </>
-  );
+    );
+  }else{
+    return null
+  }
 }
