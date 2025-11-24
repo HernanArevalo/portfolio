@@ -1,5 +1,5 @@
 export const linkedinURL = 'https://www.linkedin.com/in/hernanarevalo'
-export const githubURL = 'https://www.instagram.com/nan.arevalo'
+export const githubURL = 'https://github.com/HernanArevalo'
 export const instagramURL = 'https://www.instagram.com/nan.arevalo'
 export const phone = '+54 351 6148912' 
 export const whatsappURL = 'https://wa.me/' + phone.split(" ").join("")
