@@ -130,19 +130,19 @@ const Hero = () => {
         <motion.div
           initial="hidden"
           animate="visible"
-          className="flex md:flex-col lg:flex-row sm:flex-col flex-col w-full items-center justify-center lg:justify-between h-full pt-32 pb-24 lg:px-0 px-3"
+          className="flex md:flex-col lg:flex-row sm:flex-col flex-col w-full items-center justify-center lg:justify-between h-full pt-32 pb-24 lg:px-0 px-3 gap-22 mx-0"
         >
           <motion.div
             variants={textVariants}
-            className="max-w-full sm:max-w-full md:max-w-full lg:max-w-[70%] w-full flex flex-col lg:justify-start justify-center lg:text-left text-center md:gap-y-4 ml-[0rem] xl:ml-[-2.5rem]"
+            className="flex flex-col lg:justify-start justify-center lg:text-left text-center md:gap-y-4 ml-[0rem] xl:ml-[-2.5rem]"
           >
             <h2 className="text-lg md:text-2xl font-bold text-secondary-text">
               Hello There,
             </h2>
-            <h1 className="sm:text-5xl text-5xl lg:text-6xl xl:text-7xl font-semibold">
-              I am <span className="name">Hernán</span>
+            <h1 className="sm:text-5xl text-5xl lg:text-6xl xl:text-6xl 2xl:text-7xl font-semibold">
+              I am <span className="name text-primary-green">Hernán</span>
             </h1>
-            <h3 className="sm:text-5xl text-5xl lg:text-6xl xl:text-7xl font-semibold">
+            <h3 className="sm:text-5xl text-5xl lg:text-6xl xl:text-6xl 2xl:text-7xl font-semibold">
               FullStack Developer
             </h3>
             <p className="text-lg lg:text-xl lg:text-left text-center lg:mx-0 mx-auto max-w-[500px] text-secondary-text tracking-wide">
@@ -172,7 +172,7 @@ const Hero = () => {
             animate="visible"
             variants={pictureVariants}
             transition={{ delay: 2, duration: 0.5, ease: 'easeInOut' }}
-            className="hidden-element w-full lg:w-[40%] mt-5 transition-transform duration-300 border-primary-white/30 border-4 rounded-3xl overflow-hidden"
+            className="overflow-hidden w-full lg:w-[30%] mt-5 transition-transform duration-300 border-primary-white/30 border-4 rounded-3xl"
           > 
             <Image
               src={user}
@@ -181,16 +181,9 @@ const Hero = () => {
               width={1080}
               className="lg:w-[500px] w-full object-cover h-[400px] lg:h-[500px]"
             />
+            
           </motion.div>
-        </motion.div>
-      </Wrapper>
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={socialIconVariants}
-        className="absolute hidden-element top-[40%] xl:right-7 md:right-[-4.5rem] xl:block md:hidden sm:hidden hidden"
-      >
-        <div className="flex flex-col items-center gap-y-8">
+          <div className="flex flex-col items-center gap-y-8">
           {socialIcon.map((e, index) => (
             <a
               href={e.link}
@@ -202,6 +195,15 @@ const Hero = () => {
             </a>
           ))}
         </div>
+        </motion.div>
+      </Wrapper>
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={socialIconVariants}
+        className="absolute hidden-element top-[40%] xl:right-7 md:right-[-4.5rem] xl:block md:hidden sm:hidden hidden"
+      >
+        
       </motion.div>
     </div>
   );
