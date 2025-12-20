@@ -11,20 +11,8 @@ import Services from '@/components/home/services/Services';
 import Learning from '@/components/home/learning/Learning';
 import Footer from '@/components/footer/Footer';
 import Intro from '@/components/intro/Intro';
-import { useEffect } from 'react';
-import { getViews, updateViews } from '@/utils/getViews';
 
 export default function Home() {
-  useEffect(() => {
-    let executed = false;
-    const handleViews = async () => {
-      if (executed) return;
-      executed = true;
-      await updateViews();
-      await getViews();
-    };
-    handleViews();
-  }, []);
 
   return (
     <div className="overflow-x-hidden">
@@ -36,7 +24,7 @@ export default function Home() {
       <Projects />
       <About />
       <div className="min-h-screen flex flex-col justify-center items-center pt-20 xl:pt-0">
-        <AnimText text={'My Abilities'} />
+        <AnimText text={'My Skills'} />
         <Skills />
       </div>
       <Services />
