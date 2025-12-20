@@ -12,33 +12,31 @@ export const ViewsCounter = () => {
   const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
-    let executed = false;
+    if ((window as any).__VIEW_ALREADY_COUNTED__) return;
+
+    (window as any).__VIEW_ALREADY_COUNTED__ = true;
 
     const handleViews = async () => {
-      if (executed) return;
-      executed = true;
-
-      try {
-        await updateViews();
-        const count = await getViews();
-        setViews(count);
-      } catch (error) {
-        console.error("Error loading views:", error);
-      } finally {
-        setIsReady(true)
-      }
+      await updateViews();
+      const count = await getViews();
+      setViews(count);
+      setIsReady(true);
     };
 
     handleViews();
   }, []);
 
-  if (!isReady || views === 0) return null;
-
   return (
     <div className="flex justify-end md:max-w-screen-lg xl:max-w-screen-xl items-center w-full mx-auto px-3">
-      <div className="flex gap-1 px-1 items-center border-gray-600 text-gray-200 border-2 rounded-md w-fit">
+      <div
+        className={`flex gap-1 px-1 items-center border-gray-600 text-gray-200 border-2 rounded-md w-fit transition-opacity duration-300
+          ${isReady ? "opacity-100" : "opacity-0"}
+        `}
+      >
         <FaEye />
-        <span className={fontCourier.className}>{views}</span>
+        <span className={fontCourier.className}>
+          {views}
+        </span>
       </div>
     </div>
   );
