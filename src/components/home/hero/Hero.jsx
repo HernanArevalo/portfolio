@@ -86,9 +86,9 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="div-container flex md:flex-row flex-col relative group  md:max-w-screen-lg xl:max-w-screen-2xl mx-auto "
+      className="div-container flex md:flex-row flex-col relative group md:max-w-screen-lg xl:max-w-screen-2xl mx-auto"
     >
-      <div className="absolute inset-0 top-[15%] left-0 md:ml-[-0.5rem] ml-0 xl:block md:hidden sm:hidden hidden">
+      <div className="absolute inset-0 top-[15%] left-[1%] md:ml-[-0.5rem] ml-0 hidden md:block w-fit">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -183,7 +183,7 @@ const Hero = () => {
             />
             
           </motion.div>
-          <div className="flex flex-col items-center gap-y-8">
+          <div className="flex flex-row lg:flex-col items-center gap-8 mt-10 lg:mt-0">
           {socialIcon.map((e, index) => (
             <a
               href={e.link}
