@@ -1,3 +1,6 @@
+import cabusBurgerImg from "./cabus-burger.png";
+import paderImg from "./pader.png";
+import buronImg from "./buron-app.png";
 import twitterBotImg from "./twitter-bot.png";
 import moviesImg from "./movies.png";
 import espacioBlank from "./espacio-blank.png";
@@ -13,6 +16,9 @@ import smashAppImg from "./smash-app.png";
 import oldPortfolioImg from "./hernan-arevalo.png";
 
 export {
+  cabusBurgerImg,
+  paderImg,
+  buronImg,
   twitterBotImg,
   moviesImg,
   espacioBlank,
