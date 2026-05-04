@@ -1,54 +1,80 @@
 ![Intro GIF](intro.gif)
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=HernanArevalo&label=Profile%20views&color=0e75b6&style=flat" alt="naresh-khatri" /> </p>
 
-### 👋 Hello there!
-### 👋 I'm Nan
+<p align="left">
+  <img src="https://komarev.com/ghpvc/?username=HernanArevalo&label=Profile%20views&color=0e75b6&style=flat" />
+</p>
 
-- 🌱 I’m currently developing with **React, Next and Node**  <!-- ? DONE -->
-- 👯 I’m looking to be **part of a great team** <!-- ? DONE -->
-- 🤩 I’m looking to **collaborate on exciting projects** <!-- ? DONE -->
-- 💬 Ask me about **Twitter and Twitch bots development** <!-- ? DONE -->
-- 😄 Pronouns: **he/him/his** <!-- ? DONE -->
-- ⚡ Fun fact: **Star Wars fan** <!-- ? DONE -->
+## 👋 Hi, I'm Hernán (Nan)
 
-
-### 📐 Languages and Tools
-
-<img align="left" width="64" height="64" src="/public/readme-icons/next.png" alt="next">
-<img align="left" width="64" height="64" src="/public/readme-icons/react.png" alt="reactjs"/>
-<img align="left" width="64" height="64" src="/public/readme-icons/redux.png" alt="redux"/>
-<img align="left" width="64" height="64" src="/public/readme-icons/python.png" alt="python"/>
-<img align="left" width="64" height="64" src="/public/readme-icons/javascript.png" alt="javscript"/>
-<img align="left" width="64" height="64" src="/public/readme-icons/nodejs.png" alt="nodejs">
-
-
-
-<br/>
-<br/>
-<br/>
-
-### 💻 Latest projects
-
-<!-- BLOG_POSTS:START -->
-<ul>
-<li>🎯 <a href="https://github.com/HernanArevalo/twitter-lyrics-bot">Twitter bot for song lyrics on Python!</a></li> <!-- ? DONE -->
-<li>🔥 <a href="https://github.com/HernanArevalo/movies-app">Web application about movie information.</a></li> <!-- ? DONE -->
-<li>🚀 <a href="https://github.com/HernanArevalo/twitch-bot/blob/main/src/hooks/discord.js">You can see this simple connection with a Discord bot too!</a></li>
-<li>💯 <a href="https://github.com/HernanArevalo/valo-app">Valorant wiki web with agents, weapons and maps information (in process)</a></li>
-<li>⚡️ <a href="https://github.com/HernanArevalo/portfolio-next-2">Currently: rebranding my personal website</a></li>
-</ul>
-<!-- BLOG_POSTS:END -->
-
-### ⭐ GitHub Stats
-<div align="center">
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=HernanArevalo&theme=github_dark" width="32.5%">
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=HernanArevalo&theme=github_dark" width="32.5%">
-    <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=HernanArevalo&theme=github_dark&utcOffset=-3" width="32.5%">
-</div>
-
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=HernanArevalo&theme=github_dark" width="98%">
-</div>
+💻 Fullstack Developer & Systems Engineering Student  
+⚙️ Focused on building real-world solutions, combining frontend, backend and automation  
 
 ---
 
-Last edited on: 02/07/2026
+### 🚀 About me
+
+- 🧠 I build fullstack applications using **React, Next.js and Node.js**
+- ⚙️ I work on **automation and process optimization** (n8n, scripts, integrations)
+- 🧩 I enjoy designing systems where **UX, business logic and scalability align**
+- 🤝 I like working in teams and collaborating on meaningful projects
+- 🔧 I’m always exploring new things (from bots to hardware projects)
+
+---
+
+### 🧰 Tech Stack
+
+**Frontend**
+- React
+- Next.js
+- Tailwind
+- Angular
+
+**Backend & APIs**
+- Node.js
+- Prisma (ORM)
+
+**Database**
+- PostgreSQL
+
+**Automation**
+- n8n
+- Webhooks
+- Python / JavaScript scripting
+
+**Languages**
+- TypeScript
+- JavaScript
+- Python
+
+---
+
+### 💻 Featured Work
+
+- 🏪 **Showroom Management System**  
+  Fullstack app to manage sales, stock and internal workflows  
+
+- ⚙️ **Automation workflows**  
+  Bots and integrations to optimize repetitive tasks and processes  
+
+- 🤖 **Bots development**  
+  Twitter / Twitch bots and API integrations  
+
+---
+
+### 🔗 Links
+
+- 🌐 Portfolio: https://hernanarevalo.com.ar  
+- 💼 LinkedIn: https://linkedin.com/in/HernanArevalo  
+- 📫 Contact: hernanarevalo16@gmail.com  
+
+---
+
+### ⭐ GitHub Stats
+
+<div align="center">
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=HernanArevalo&theme=github_dark" width="32.5%">
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=HernanArevalo&theme=github_dark" width="32.5%">
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=HernanArevalo&theme=github_dark&utcOffset=-3" width="32.5%">
+</div>
+
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=HernanArevalo&theme=github_dark" width="98%">
