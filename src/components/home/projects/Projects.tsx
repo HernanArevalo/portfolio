@@ -86,7 +86,7 @@ const Projects = () => {
                                             <FaGithub size={25} />
                                         </button>
                                     }
-                                    {e.link !== "" &&
+                                    {!!e.link &&
                                         <button onClick={() => window.open(e.link, '_blank')} className="bg-primary-gray text-white  border border-primary-white/20 hover:scale-110 ease-in-out duration-150 transition-all  rounded-xl w-14 h-14  flex justify-center items-center">
                                             <FiLink size={25} />
                                         </button>

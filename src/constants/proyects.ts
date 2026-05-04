@@ -25,7 +25,7 @@ export const projects = [
             githubLink: "https://github.com/HernanArevalo/cabus-burgers"
         },
         {
-            name: "Jardín de Infantes - Instituto Padre Juan Burón",
+            name: "Instituto Padre Juan Burón",
             image: buronImg,
             link: "https://jardinburon.vercel.app/",
             githubLink: "https://github.com/HernanArevalo/blog-jardin-buron"
@@ -35,6 +35,18 @@ export const projects = [
             image: paderImg,
             link: "https://www.pader.com.ar",
             githubLink: ""
+        },
+        {
+            name: "Twitter Bot - 270k followers",
+            image: twitterBotImg,
+            link: "https://x.com/FrasesDeNTVG1",
+            githubLink: "https://github.com/HernanArevalo/twitter-lyrics-bot"
+        },
+        {
+            name: "Movies",
+            image: moviesImg,
+            link: "https://movies.hernanarevalo.com.ar",
+            githubLink: "https://github.com/HernanArevalo/movies-app"
         },
         {
             name: "Smash App",
@@ -49,22 +61,9 @@ export const projects = [
             githubLink: "https://github.com/HernanArevalo/espacio-blank-app"
         },
         {
-            name: "Twitter Bot - 270k followers",
-            image: twitterBotImg,
-            link: "https://x.com/FrasesDeNTVG1",
-            githubLink: "https://github.com/HernanArevalo/twitter-lyrics-bot"
-        },
-        {
-            name: "Movies",
-            image: moviesImg,
-            link: "https://movies.hernanarevalo.com.ar",
-            githubLink: "https://github.com/HernanArevalo/movies-app"
-        },
-
-        {
             name: "Old Portfolio",
             image: oldPortfolioImg,
-            link: "https://old.hernanarevalo.com.ar",
+            // link: "https://old.hernanarevalo.com.ar",
             githubLink: "https://github.com/HernanArevalo/HernanArevalo"
         },
         {
