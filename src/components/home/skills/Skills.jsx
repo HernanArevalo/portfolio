@@ -17,6 +17,8 @@ import {
   nodejs,
   python,
   sql,
+  n8n,
+  prisma
 } from "@/../public/logos";
 
 
@@ -62,14 +64,16 @@ const Skills = () => {
         { icon: typescript, name: "TypeScript" },
         { icon: react, name: "React" },
         { icon: nextjs, name: "Next.js" },
+        { icon: n8n, name: "n8n" },
+        { icon: nodejs, name: "NodeJS" },
+        { icon: sql, name: "SQL" },
+        { icon: postgresql, name: "PostgreSQL" },
+        { icon: prisma, name: "Prisma" },
+        { icon: tailwind, name: "TailwindCSS" },
         { icon: angular, name: "Angular" },
         { icon: redux, name: "Redux" },
-        { icon: nodejs, name: "NodeJS" },
-        { icon: postgresql, name: "PostgreSQL" },
         { icon: python, name: "Python" },
-        { icon: tailwind, name: "TailwindCSS" },
         { icon: firebase, name: "Firebase" },
-        { icon: sql, name: "SQL" },
         { icon: photoshop, name: "Photoshop" },
         { icon: illustrator, name: "Illustrator" },
     ];

@@ -17,21 +17,12 @@ export const metadata: Metadata = {
   title: "Hernán Arévalo | FullStack Dev.",
   description:
     "Portfolio of Hernán Arévalo, FullStack Developer specialized in Next.js, Angular, and modern frontend and backend projects.",
-
-    // icons: {
-    //   icon: "/favicon.ico",
-    //   shortcut: "/favicon-32x32.png",
-    //   apple: "/apple-touch-icon.png",
-    // },
-    
     icons: {
       icon: "/favicon-new.ico",
       shortcut: "/favicon-32x32-new.png",
       apple: "/apple-touch-icon-new.png",
     },
-    
   manifest: "/manifest.json",
-
   openGraph: {
     title: "Hernán Arévalo | FullStack Developer",
     description:
@@ -41,7 +32,6 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
-
   twitter: {
     card: "summary",
     title: "Hernán Arévalo | FullStack Dev",
