@@ -77,4 +77,4 @@
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=HernanArevalo&theme=github_dark&utcOffset=-3" width="32.5%">
 </div>
 
-<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=HernanArevalo&theme=github_dark" width="98%">
+<img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=HernanArevalo&theme=github_dark" width="66%">
