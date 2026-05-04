@@ -17,7 +17,7 @@ const services = [
     icon: <BsDatabaseGear />,
     title: 'Backend Development',
     description:
-      'Designing and implementing scalable APIs with Node.js, PostgreSQL, and Sequelize, ensuring efficiency and reliability.',
+      'Designing and implementing scalable APIs with Node.js, PostgreSQL, and Prisma, ensuring efficiency and reliability.',
   },
   {
     icon: <PiShapes />,
@@ -29,7 +29,7 @@ const services = [
     icon: <PiLightbulb />,
     title: 'Creative Solutions',
     description:
-      'From 3D printing projects to automation bots, I enjoy solving real-world problems through innovation and technology.',
+      'From workflow automation and integrations to 3D and hardware experiments, I enjoy solving real-world problems through innovation.',
   },
 ];
 
