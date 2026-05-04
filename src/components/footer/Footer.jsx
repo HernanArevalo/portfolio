@@ -139,7 +139,7 @@ const Footer = () => {
                     className="w-[30px] mt-1 object-contain"
                   />
                   <div>
-                    <h3 className="text-2xl font-semibold">Address</h3>
+                    <h3 className="text-2xl font-semibold">Location</h3>
                     <p className="text-lg text-primary-white/80">
                       Córdoba, Argentina.
                     </p>
@@ -246,7 +246,7 @@ const Footer = () => {
               </div>
               <div>
                 <label className="block mb-2 text-lg xl:text-xl text-primary-white/80">
-                  Write Project Details*
+                  Tell me your idea*
                 </label>
                 <textarea
                   name="projectDetails"
