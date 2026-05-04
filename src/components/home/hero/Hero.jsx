@@ -143,11 +143,11 @@ const Hero = () => {
               I am <span className="name text-primary-green">Hernán</span>
             </h1>
             <h3 className="sm:text-5xl text-5xl lg:text-6xl xl:text-6xl 2xl:text-7xl font-semibold">
-              FullStack Developer
+              Fullstack Developer
             </h3>
             <p className="text-lg lg:text-xl lg:text-left text-center lg:mx-0 mx-auto max-w-[500px] text-secondary-text tracking-wide">
-              My passion for design, code, and web interaction fuels my journey
-              in the development realm.
+              I build fullstack products and automations where UX, business
+              logic, and scalability work together.
             </p>
             <motion.div
               variants={buttonVariants}

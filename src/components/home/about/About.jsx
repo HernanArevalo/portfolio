@@ -86,7 +86,7 @@ const About = () => {
                   className="flex flex-col"
                 >
                   <p className="text-primary-white text-7xl font-semibold">
-                    20+
+                    30+
                   </p>
                   <p className="text-secondary-text text-xl font-normal">
                     Projects Completed
