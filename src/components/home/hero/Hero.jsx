@@ -1,5 +1,5 @@
 import { Wrapper } from '@/components/shared/wrapper';
-import user from '/public/profile.png';
+import profilePicture from '/public/profile-picture-2.jpg';
 
 import Image from 'next/image';
 import { TiSocialLinkedin } from 'react-icons/ti';
@@ -175,11 +175,11 @@ const Hero = () => {
             className="overflow-hidden w-full lg:w-[30%] mt-5 transition-transform duration-300 border-primary-white/30 border-4 rounded-3xl"
           > 
             <Image
-              src={user}
+              src={profilePicture}
               alt="profile photo"
               height={1080}
               width={1080}
-              className="lg:w-[500px] w-full object-cover h-[400px] lg:h-[500px]"
+              className="lg:w-[500px] w-full object-cover lg:h-[500px]"
             />
             
           </motion.div>
