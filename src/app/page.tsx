@@ -9,6 +9,8 @@ import About from '@/components/home/about/About';
 import Skills from '@/components/home/skills/Skills';
 import Services from '@/components/home/services/Services';
 import Learning from '@/components/home/learning/Learning';
+import Experience from '@/components/home/experience/Experience';
+import Certificates from '@/components/home/certificates/Certificates';
 import Footer from '@/components/footer/Footer';
 import Intro from '@/components/intro/Intro';
 
@@ -28,6 +30,8 @@ export default function Home() {
         <Skills />
       </div>
       <Services />
+      <Experience />
+      <Certificates />
       <Learning />
       <Footer />
     </div>
